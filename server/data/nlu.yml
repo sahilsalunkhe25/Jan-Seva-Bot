@@ -1,0 +1,841 @@
+version: "3.1"
+# pradhan mantri kisan sanman nidhi yojana
+# pradhan mantri fasal bima yojana
+nlu:
+- intent: Insurance_What_is_Insurance
+  examples: |
+    - What is Insurance
+    - Tell me What is Insurance
+
+- intent: crop_insurance_What_is_Crop_Insurance
+  examples: |
+    - What is Crop Insurance
+    - Tell me What is Crop Insurance
+
+- intent: objective_Objective_of_PMFBY
+  examples: |
+    - Objective of PMFBY
+    - Tell me Objective of PMFBY
+
+- intent: crop_insurance_What_is_Weather_based_Crop_Insurance
+  examples: |
+    - What is Weather based Crop Insurance
+    - Tell me What is Weather based Crop Insurance
+
+- intent: crop_insurance_How_many_Coverage_of_Crops
+  examples: |
+    - How many Coverage of Crops
+    - Tell me How many Coverage of Crops
+
+- intent: coverage_limit_What_are_Sum_Insured_/Coverage_Limit
+  examples: |
+    - What are Sum Insured /Coverage Limit
+    - Tell me What are Sum Insured /Coverage Limit
+
+- intent: date_Last_date_for_Crop_Insurance_Kharif_Season
+  examples: |
+    - Last date for Crop Insurance Kharif Season
+    - Tell me Last date for Crop Insurance Kharif Season
+
+- intent: crop_insurance_How_many_companies_providing_Crop_Insurance
+  examples: |
+    - How many companies providing Crop Insurance
+    - Tell me How many companies providing Crop Insurance
+
+- intent: risks_What_types_of_Risks_to_be_covered_&_exclusions?
+  examples: |
+    - What types of Risks to be covered & exclusions?
+    - Tell me What types of Risks to be covered & exclusions?
+
+- intent: claim_settlement_PROCEDURE_FOR_SETTLEMENT_OF_CLAIMS
+  examples: |
+    - PROCEDURE FOR SETTLEMENT OF CLAIMS
+    - Tell me PROCEDURE FOR SETTLEMENT OF CLAIMS
+
+- intent: PMFBY_What_is_Pradhan_Mantri_Fasal_Bima_Yojana
+  examples: |
+    - What is Pradhan Mantri Fasal Bima Yojana
+    - Tell me What is Pradhan Mantri Fasal Bima Yojana
+
+- intent: reasons_What_are_the_reasons_due_to_which_crop_gets_affected_and_risks_covered
+  examples: |
+    - What are the reasons due to which crop gets affected and risks covered
+    - Tell me What are the reasons due to which crop gets affected and risks covered
+
+- intent: claim_assesment_How_is_the_assessment_of_claim_done
+  examples: |
+    - How is the assessment of claim done
+    - Tell me How is the assessment of claim done
+
+- intent: Premium_rates_What_are_the_Premium_Rates_charged_under_this_scheme
+  examples: |
+    - What are the Premium Rates charged under this scheme
+    - Tell me What are the Premium Rates charged under this scheme
+
+- intent: sowing_claim_How_is_prevented_sowing_claim_applicable_for_farmers
+  examples: |
+    - How is prevented sowing claim applicable for farmers
+    - Tell me How is prevented sowing claim applicable for farmers
+
+- intent: PMKSN_What_is_Pradhan_Mantri_Kisan_Samman_Nidhi
+  examples: |
+    - What is Pradhan Mantri Kisan Samman Nidhi
+    - Tell me What is Pradhan Mantri Kisan Samman Nidhi
+
+- intent: SMF_Whether_the_benefits_of_the_scheme_are_admissible_to_only_Small_&_Marg
+  examples: |
+    - Whether the benefits of the scheme are admissible to only Small & Marginal Farmers' (SMF) families?
+    - Tell me Whether the benefits of the scheme are admissible to only Small & Marginal Farmers' (SMF) families?
+
+- intent: Benifits_PMKSN_What_are_the_benefits_of_pm_kisan_sanman_nidhi_Scheme
+  examples: |
+    - What are the benefits of pm kisan sanman nidhi Scheme
+    - Tell me What are the benefits of pm kisan sanman nidhi Scheme
+
+- intent: launch_date_When_was_the_scheme_launched
+  examples: |
+    - When was the scheme launched
+    - Tell me When was the scheme launched
+
+- intent: start_date_From_which_date_the_Scheme_has_come_into_effect
+  examples: |
+    - From which date the Scheme has come into effect
+    - Tell me From which date the Scheme has come into effect
+
+- intent: eligible_people_Who_are_eligible_to_get_benefits_under_pm_kisan_sanman_nidhi
+  examples: |
+    - Who are eligible to get benefits under pm kisan sanman nidhi
+    - Tell me Who are eligible to get benefits under pm kisan sanman nidhi
+
+- intent: not_eligible_Who_are_not_eligible_to_get_benefits_under_the_Scheme_of_pm_kisan_sanm
+  examples: |
+    - Who are not eligible to get benefits under the Scheme of pm kisan sanman nidhi
+    - Tell me Who are not eligible to get benefits under the Scheme of pm kisan sanman nidhi
+
+- intent: benifit_details_How_many_times_the_benefit_will_be_given_in_a_year
+  examples: |
+    - How many times the benefit will be given in a year
+    - Tell me How many times the benefit will be given in a year
+
+- intent: benifit_criteria_Whether_an_employee_of_the_CentralorState_Government_or_PSU_or_Autonom
+  examples: |
+    - Whether an employee of the CentralorState Government or PSU or Autonomous
+      Organization, etc., who holds cultivable land in hisorher own name in villages, is
+      eligible to get the benefit under the scheme
+    - Tell me Whether an employee of the CentralorState Government or PSU or Autonomous
+      Organization, etc., who holds cultivable land in hisorher own name in villages, is
+      eligible to get the benefit under the scheme
+
+- intent: two_hectare_Will_any_individual_or_farmer_family_owning_more_than_2_hectare_of_cul
+  examples: |
+    - Will any individual or farmer family owning more than 2 hectare of cultivable 
+      land get any benefit under the scheme
+    - Tell me Will any individual or farmer family owning more than 2 hectare of cultivable 
+    land get any benefit under the scheme
+
+- intent: law_._What_will_happen_if_the_beneficiary_gives_incorrect_declaration_for_
+  examples: |
+    - . What will happen if the beneficiary gives incorrect declaration for the 
+      implementation of the Scheme?
+    - Tell me . What will happen if the beneficiary gives incorrect declaration for the 
+      implementation of the Scheme?
+
+- intent: cutoff_date_What_is_the_cutoff_date_for_determination_of_eligibility_of_beneficiar
+  examples: |
+    - What is the cutoff date for determination of eligibility of beneficiaries under 
+    the scheme
+    - Tell me What is the cutoff date for determination of eligibility of beneficiaries under 
+    the scheme
+
+- intent: death_of_landowner_Whether_the_scheme_benefits_will_be_allowed_in_cases_where_transfer_of
+  examples: |
+    - Whether the scheme benefits will be allowed in cases where transfer of 
+      ownership of cultivable land takes place after the cut-off date of 01.02.2019 on 
+      account of succession due to death of the landowner
+    - Tell me Whether the scheme benefits will be allowed in cases where transfer of 
+      ownership of cultivable land takes place after the cut-off date of 01.02.2019 on 
+      account of succession due to death of the landowner
+
+- intent: coverage_limit_What_is_the_coverage_provided_during_standing_crop_stage_for_farmers
+  examples: |
+    - What is the coverage provided during standing crop stage for farmers
+    - Tell me What is the coverage provided during standing crop stage for farmers
+
+- intent: loss_covered_If_the_crop_is_harvested_is_loss_covered_after_that_also_and_to_what_e
+  examples: |
+    - If the crop is harvested is loss covered after that also and to what extent
+    - Tell me If the crop is harvested is loss covered after that also and to what extent
+
+- intent: crops_covered_Which_crop_can_be_covered_under_Pradhan_Mantri_Fasal_Bima_Yojana_schem
+  examples: |
+    - Which crop can be covered under Pradhan Mantri Fasal Bima Yojana scheme
+    - Tell me Which crop can be covered under Pradhan Mantri Fasal Bima Yojana scheme
+
+- intent: NPSR_What_would_be_the_Normal_Premium_subsidy_ratio
+  examples: |
+    - What would be the Normal Premium subsidy ratio
+    - Tell me What would be the Normal Premium subsidy ratio
+
+- intent: extent_of_coverage_What_is_the_extent_of_coverage_available_for_the_crops
+  examples: |
+    - What is the extent of coverage available for the crops
+    - Tell me What is the extent of coverage available for the crops
+
+- intent: timelines_of_PMFBY_Is_there_any_timelines_for_enrollment_for_PMFBY
+  examples: |
+    - Is there any timelines for enrollment for PMFBY
+    - Tell me Is there any timelines for enrollment for PMFBY
+
+- intent: Sum_insured_What_is_Sum_Insured_Limit_for_individual_farmer
+  examples: |
+    - What is Sum Insured Limit for individual farmer
+    - Tell me What is Sum Insured Limit for individual farmer
+
+- intent: settlement_claims_What_is_the_basis_of_settlement_of_claims_for_farmer
+  examples: |
+    - What is the basis of settlement of claims for farmer
+    - Tell me What is the basis of settlement of claims for farmer
+
+- intent: preconditions_What_are_the_Preconditions_for_the_State_for_implementation_of_this_sc
+  examples: |
+    - What are the Preconditions for the State for implementation of this scheme
+    - Tell me What are the Preconditions for the State for implementation of this scheme
+
+- intent: process_What_is_the_Process_that_State_follows_and_notification
+  examples: |
+    - What is the Process that State follows and notification
+    - Tell me What is the Process that State follows and notification
+
+- intent: cutoff_date_Are_there_any_cut_off_dates_to_enroll
+  examples: |
+    - Are there any cut off dates to enroll
+    - Tell me Are there any cut off dates to enroll
+
+- intent: data_entry_Are_there_any_cut_off_dates_to_enter_data_in_the_portal
+  examples: |
+    - Are there any cut off dates to enter data in the portal
+    - Tell me Are there any cut off dates to enter data in the portal
+
+- intent: yeild_data_When_do_the_States_provide_the_yield_data_to_Insurance_Companies
+  examples: |
+    - When do the States provide the yield data to Insurance Companies
+    - Tell me When do the States provide the yield data to Insurance Companies
+
+- intent: settle_claims_By_when_will_Insurance_Company_settle_the_claims_after_receiving_the_d
+  examples: |
+    - By when will Insurance Company settle the claims after receiving the data
+    - Tell me By when will Insurance Company settle the claims after receiving the data
+
+- intent: process_to_inform_What_is_the_process_to_inform_the_company_about_crop_sown_and_changes
+  examples: |
+    - What is the process to inform the company about crop sown and changes
+    - Tell me What is the process to inform the company about crop sown and changes
+
+- intent: commisions_What_are_the_Commission_and_Bank_charges_payable_to_bankers_and_interm
+  examples: |
+    - What are the Commission and Bank charges payable to bankers and intermediaries
+    - Tell me What are the Commission and Bank charges payable to bankers and intermediaries
+
+- intent: service_tax_Is_service_tax_applicable_under_this_scheme
+  examples: |
+    - Is service tax applicable under this scheme
+    - Tell me Is service tax applicable under this scheme
+
+- intent: transfer_Whether_transfer_of_ownership_occurred_between_01.12.2018_and_31.01.20
+  examples: |
+    - Whether transfer of ownership occurred between 01.12.2018 and 31.01.2019 
+    are eligible for consideration?
+    - Tell me Whether transfer of ownership occurred between 01.12.2018 and 31.01.2019 
+    are eligible for consideration?
+
+- intent: income_tax_payee_._ls_an_income_tax_payee_farmer_or_his_or_her_spouse_eligible_to_get_b
+  examples: |
+    - . ls an income tax payee farmer or his or her spouse eligible to get benefit
+      under the Scheme of pradhan mantri kisan sanman nidhi
+    - Tell me . ls an income tax payee farmer or his or her spouse eligible to get benefit
+    under the Scheme of pradhan mantri kisan sanman nidhi
+
+- intent: def_of_family_What_is_the_definition_of_'family'_under_the_Scheme_of_pradhan_mantri_
+  examples: |
+    - What is the definition of 'family' under the Scheme of pradhan mantri kisan sanman nidhi
+    - Tell me What is the definition of 'family' under the Scheme of pradhan mantri kisan sanman nidhi
+
+- intent: PMKSN_criteria_ls_any_person_or_farmer_who_is_cultivating_a_land_but_is_not_having_th
+  examples: |
+    - ls any person or farmer who is cultivating a land but is not having the land
+      holding in his or her own name, for example tenant farmers, is eligible to get
+      benefit under the Scheme of pradhan mantri kisan sanman nidhi
+    - Tell me ls any person or farmer who is cultivating a land but is not having the land
+      holding in his or her own name, for example tenant farmers, is eligible to get
+      benefit under the Scheme of pradhan mantri kisan sanman nidhi
+
+- intent: beneficiaries_How_the_beneficiaries_under_the_pm_kisan_sanman_nidhi_will_be_identifi
+  examples: |
+    - How the beneficiaries under the pm kisan sanman nidhi will be identified and shortlisted for
+    payment of intended benefit
+    - Tell me How the beneficiaries under the pm kisan sanman nidhi will be identified and shortlisted for
+    payment of intended benefit
+
+- intent: information_for_PMKSN_What_is_the_mandatory_information_required_to_be_submitted_on_PM-KISAN
+  examples: |
+    - What is the mandatory information required to be submitted on PM-KISAN 
+    portal for the transfer of benefits
+    - Tell me What is the mandatory information required to be submitted on PM-KISAN 
+    portal for the transfer of benefits
+
+- intent: registration_confirmation_._How_does_a_landholder_farmers'family_know_that_his_or_her_name_is_in
+  examples: |
+    - . How does a landholder farmers'family know that his or her name is included 
+      in the list of beneficiaries
+    - Tell me . How does a landholder farmers'family know that his or her name is included 
+      in the list of beneficiaries
+
+- intent: remedy_available_What_is_the_remedy_available_for_eligible_beneficiary_if_hisorher_name
+  examples: |
+    - What is the remedy available for eligible beneficiary if hisorher name is not 
+      included in the list of beneficiaries
+    - Tell me What is the remedy available for eligible beneficiary if hisorher name is not 
+      included in the list of beneficiaries
+
+- intent: financial_benifit_lf_there_are_multiple_farmers'_families_whose_names_are_recorded_on_a_
+  examples: |
+    - lf there are multiple farmers' families whose names are recorded on a single 
+    landholding whether each farmer's family is eligible to get benefit of the 
+    scheme? lf so, what is the quantum of minimum financial benefit that such 
+    families will get under the scheme pm kisan sanman nidhi
+    - Tell me lf there are multiple farmers' families whose names are recorded on a single 
+    landholding whether each farmer's family is eligible to get benefit of the 
+    scheme? lf so, what is the quantum of minimum financial benefit that such 
+    families will get under the scheme pm kisan sanman nidhi
+
+- intent: monetary_benifit_Will_be_monetary_benefit_under_the_Scheme_of_pm_kisan_sanman_nidhi_be_
+  examples: |
+    - Will be monetary benefit under the Scheme of pm kisan sanman nidhi be directly credited into 
+    beneficiary accounts
+    - Tell me Will be monetary benefit under the Scheme of pm kisan sanman nidhi be directly credited into 
+    beneficiary accounts
+
+- intent: account_details_Whether_it_is_compulsory_for_beneficiaries_to_give_their_bank_account
+
+  examples: |
+    - Whether it is compulsory for beneficiaries to give their bank account
+    details?
+    - Tell me Whether it is compulsory for beneficiaries to give their bank account
+    details?
+
+- intent: aadhar_details_._Whether_giving_Aadhaar_details_is_mandatory_for_availing_benefit_und
+  examples: |
+    - . Whether giving Aadhaar details is mandatory for availing benefit under the 
+    Scheme of kisan sanman nidhi
+    - Tell me . Whether giving Aadhaar details is mandatory for availing benefit under the 
+    Scheme of kisan sanman nidhi
+
+- intent: urban_area_farmers_Whether_farmers_in_villages_situated_in_urban_areas_are_eligible_for_t
+  examples: |
+    - Whether farmers in villages situated in urban areas are eligible for the benefit 
+    of the Scheme of pm kisan sanman nidhi
+    - Tell me Whether farmers in villages situated in urban areas are eligible for the benefit 
+    of the Scheme of pm kisan sanman nidhi
+
+- intent: micro_land_Whether_micro_land_holdings_are_admissible_for_availing_the_benefit_of
+  examples: |
+    - Whether micro land holdings are admissible for availing the benefit of the 
+    Scheme of kisan sanman nidhi
+    - Tell me Whether micro land holdings are admissible for availing the benefit of the 
+    Scheme of kisan sanman nidhi
+
+- intent: prescribed_mechanism_What_is_the_prescribed_mechanism_for_validation_of_information_or_decl
+  examples: |
+    - What is the prescribed mechanism for validation of information or declaration 
+    furnished by the beneficiaries
+    - Tell me What is the prescribed mechanism for validation of information or declaration 
+    furnished by the beneficiaries
+
+- intent: cutoff_date_What_is_the_cut-off_date_for_'minor'_children_becoming_'major'_under_t
+  examples: |
+    - What is the cut-off date for 'minor' children becoming 'major' under the
+    Scheme of pm kisan sanman nidhi
+    - Tell me What is the cut-off date for 'minor' children becoming 'major' under the
+    Scheme of pm kisan sanman nidhi
+
+- intent: non_agricultural_purpose_._Whether_farmers_may_avail_the_benefit_of_the_Scheme_against_agricult
+  examples: |
+    - . Whether farmers may avail the benefit of the Scheme against agricultural land 
+    being used for non -agricultural purposes
+    - Tell me . Whether farmers may avail the benefit of the Scheme against agricultural land 
+    being used for non -agricultural purposes
+
+- intent: installments_What_is_the_procedure_of_release_of_installments_to_the_beneficiaries
+  examples: |
+    - What is the procedure of release of installments to the beneficiaries
+    - Tell me What is the procedure of release of installments to the beneficiaries
+
+- intent: installments_criteria_If_a_farmer_registered_under_the_Scheme_does_not_receive_any_installme
+  examples: |
+    - If a farmer registered under the Scheme does not receive any installment in 
+    any 4-monthly period for any reason, whether he or she will be able to receive the 
+    same later on
+    - Tell me If a farmer registered under the Scheme does not receive any installment in 
+    any 4-monthly period for any reason, whether he or she will be able to receive the 
+    same later on
+
+- intent: mandatory_information_What_is_the_mandatory_information_required_to_be_submitted_on_PM-KISAN
+  examples: |
+    - What is the mandatory information required to be submitted on PM-KISAN portal for the transfer of benefits
+    - Tell me What is the mandatory information required to be submitted on PM-KISAN portal for the transfer of benefits
+
+- intent: incorrect_declaration_What_will_happen_if_the_beneficiary_gives_incorrect_declaration_for_pm
+  examples: |
+    - What will happen if the beneficiary gives incorrect declaration for pm kisan sanman nidhi ?
+    - Tell me What will happen if the beneficiary gives incorrect declaration for pm kisan sanman nidhi ?
+
+- intent: credit_card_scheme_What_is_kisan_credit_card_scheme
+  examples: |
+    - What is kisan credit card scheme
+    - Tell me What is kisan credit card scheme
+
+- intent: use_Can_I_use_my_Kisan_Credit_Card_to_withdraw_cash_from_the_ATM
+  examples: |
+    - Can I use my Kisan Credit Card to withdraw cash from the ATM
+    - Tell me Can I use my Kisan Credit Card to withdraw cash from the ATM
+
+- intent: credit_limit_How_is_the_credit_limit_decided_for_Kisan_Credit_Card
+  examples: |
+    - How is the credit limit decided for Kisan Credit Card
+    - Tell me How is the credit limit decided for Kisan Credit Card
+
+- intent: number_of_withdrawals_How_many_withdrawals_can_I_make_using_the_Kisan_Credit_Card
+  examples: |
+    - How many withdrawals can I make using the Kisan Credit Card
+    - Tell me How many withdrawals can I make using the Kisan Credit Card
+
+- intent: POS_Can_I_use_the_Kisan_Credit_Card_at_merchant_Point_of_Sale_(POS)_termin
+  examples: |
+    - Can I use the Kisan Credit Card at merchant Point of Sale (POS) terminals
+    - Tell me Can I use the Kisan Credit Card at merchant Point of Sale (POS) terminals
+
+- intent: insurance_premium_What_is_the_insurance_premium_for_personal_accident_insurance_scheme_a
+  examples: |
+    - What is the insurance premium for personal accident insurance scheme available with this card
+    - Tell me What is the insurance premium for personal accident insurance scheme available with this card
+
+- intent: validity_period_What_is_the_validity_period_for_Kisan_Credit_Card
+  examples: |
+    - What is the validity period for Kisan Credit Card
+    - Tell me What is the validity period for Kisan Credit Card
+
+- intent: online_application_Can_I_apply_for_the_Kisan_Credit_Card_online_from_my_bank
+  examples: |
+    - Can I apply for the Kisan Credit Card online from my bank
+    - Tell me Can I apply for the Kisan Credit Card online from my bank
+
+- intent: insurance_cover_What_type_of_insurance_cover_do_the_Kisan_Credit_Card_(KCC)_Holders_ge
+  examples: |
+    - What type of insurance cover do the Kisan Credit Card (KCC) Holders get
+    - Tell me What type of insurance cover do the Kisan Credit Card (KCC) Holders get
+
+- intent: ratio_In_what_ratio_the_premium_of_Personal_Accident_Insurance_is_borne_by_t
+  examples: |
+    - In what ratio the premium of Personal Accident Insurance is borne by the bank and the card holder
+    - Tell me In what ratio the premium of Personal Accident Insurance is borne by the bank and the card holder
+
+- intent: type_of_card_What_type_of_credit_is_provided_to_the_Kisan_Credit_Card_(KCC)_Holder
+  examples: |
+    - What type of credit is provided to the Kisan Credit Card (KCC) Holder
+    - Tell me What type of credit is provided to the Kisan Credit Card (KCC) Holder
+
+- intent: NAIS_What_is_NAIS?
+  examples: |
+    - What is NAIS?
+    - Tell me What is NAIS?
+
+- intent: PAIS_What_is_PAIS?
+  examples: |
+    - What is PAIS?
+    - Tell me What is PAIS?
+
+- intent: marginal_farmer_Who_is_a_Marginal_Farmer
+  examples: |
+    - Who is a Marginal Farmer
+    - Tell me Who is a Marginal Farmer
+
+- intent: minimum_credit_What_is_the_Minimum_credit_limit_under_Kisan_Credit_Card_(KCC)
+  examples: |
+    - What is the Minimum credit limit under Kisan Credit Card (KCC)
+    - Tell me What is the Minimum credit limit under Kisan Credit Card (KCC)
+
+- intent: eligibility_Eligibility_for_kisan_credit_card
+  examples: |
+    - Eligibility for kisan credit card
+    - Tell me Eligibility for kisan credit card
+
+- intent: application_How_do_I_apply_for_a_Kisan_Credit_Card
+  examples: |
+    - How do I apply for a Kisan Credit Card
+    - Tell me How do I apply for a Kisan Credit Card
+
+- intent: benifits_What_are_the_benefits_of_the_Kisan_Credit_Card_Scheme
+  examples: |
+    - What are the benefits of the Kisan Credit Card Scheme
+    - Tell me What are the benefits of the Kisan Credit Card Scheme
+
+- intent: credits_gained_How_much_credit_can_I_get_through_the_Kisan_Credit_Card_Scheme
+  examples: |
+    - How much credit can I get through the Kisan Credit Card Scheme
+    - Tell me How much credit can I get through the Kisan Credit Card Scheme
+
+- intent: interest_rate_What_is_the_interest_rate_on_Kisan_Credit_Card_loans
+  examples: |
+    - What is the interest rate on Kisan Credit Card loans
+    - Tell me What is the interest rate on Kisan Credit Card loans
+
+- intent: non_agricultural_purpose_Can_I_use_the_Kisan_Credit_Card_for_non-agricultural_purposes
+  examples: |
+    - Can I use the Kisan Credit Card for non-agricultural purposes
+    - Tell me Can I use the Kisan Credit Card for non-agricultural purposes
+
+- intent: processing_fee_Is_there_any_processing_fee_for_the_Kisan_Credit_Card_Scheme
+  examples: |
+    - Is there any processing fee for the Kisan Credit Card Scheme
+    - Tell me Is there any processing fee for the Kisan Credit Card Scheme
+
+- intent: repayment_period_What_is_the_repayment_period_for_Kisan_Credit_Card_loans
+  examples: |
+    - What is the repayment period for Kisan Credit Card loans
+    - Tell me What is the repayment period for Kisan Credit Card loans
+
+- intent: failed_to_repay_What_happens_if_I_fail_to_repay_my_Kisan_Credit_Card_loan
+  examples: |
+    - What happens if I fail to repay my Kisan Credit Card loan
+    - Tell me What happens if I fail to repay my Kisan Credit Card loan
+
+- intent: PMKMNDY_What_is_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_(PM-KMY)
+  examples: |
+    - What is Pradhan Mantri Kisan Maan-Dhan Yojana (PM-KMY)
+    - Tell me What is Pradhan Mantri Kisan Maan-Dhan Yojana (PM-KMY)
+
+- intent: benifits_PMKMNDY_What_are_the_benefits_of_the_scheme
+  examples: |
+    - What are the benefits of the scheme
+    - Tell me What are the benefits of the scheme
+
+- intent: eligibiliy_Who_is_eligible_to_get_the_benefits_of_the_scheme
+  examples: |
+    - Who is eligible to get the benefits of the scheme
+    - Tell me Who is eligible to get the benefits of the scheme
+
+- intent: incorrect_data_What_will_happen_if_the_beneficiary_gives_incorrect_declaration_to_be_
+  examples: |
+    - What will happen if the beneficiary gives incorrect declaration to be an eligible
+    subscriber of the scheme
+    - Tell me What will happen if the beneficiary gives incorrect declaration to be an eligible
+    subscriber of the scheme
+
+- intent: information_for_PMKMNDY_What_kind_of_information_needs_to_be_provided_by_the_beneficiary_at_th
+  examples: |
+    - What kind of information needs to be provided by the beneficiary at the time of
+    registration
+    - Tell me What kind of information needs to be provided by the beneficiary at the time of
+    registration
+
+- intent: Pension_fund_manager_Who_will_act_as_Pension_Fund_Manager_for_the_Scheme
+  examples: |
+    - Who will act as Pension Fund Manager for the Scheme
+    - Tell me Who will act as Pension Fund Manager for the Scheme
+
+- intent: contribution_Can_contribution_to_the_scheme_be_made_from_the_benefits_received_from
+  examples: |
+    - Can contribution to the scheme be made from the benefits received from PMKISAN Scheme
+    - Tell me Can contribution to the scheme be made from the benefits received from PMKISAN Scheme
+
+- intent: Pension_fund_What_would_constitute_a_Pension_Fund
+  examples: |
+    - What would constitute a Pension Fund
+    - Tell me What would constitute a Pension Fund
+
+- intent: SMF_Are_StateorUT_Governments_permitted_to_share_the_burden_of_individual_
+  examples: |
+    - Are StateorUT Governments permitted to share the burden of individual SMF 
+    beneficiary contribution
+    - Tell me Are StateorUT Governments permitted to share the burden of individual SMF 
+    beneficiary contribution
+
+- intent: due_date_What_will_be_the_due_date_for_monthly_contributions
+  examples: |
+    - What will be the due date for monthly contributions
+    - Tell me What will be the due date for monthly contributions
+
+- intent: CSC_When_would_CSC_issue_a_Pension_Card_to_the_subscriber
+  examples: |
+    - When would CSC issue a Pension Card to the subscriber
+    - Tell me When would CSC issue a Pension Card to the subscriber
+
+- intent: Spouses_Will_the_applicant_farmers_or_their_spouses_be_charged_any_fee_for_enr
+  examples: |
+    - Will the applicant farmers or their spouses be charged any fee for enrolment 
+    under the Scheme
+    - Tell me Will the applicant farmers or their spouses be charged any fee for enrolment 
+    under the Scheme
+
+- intent: apply_PMKMNDY_How_do_I_apply_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana
+  examples: |
+    - How do I apply for the Pradhan Mantri Kisan Maan-Dhan Yojana
+    - Tell me How do I apply for the Pradhan Mantri Kisan Maan-Dhan Yojana
+
+- intent: contri_amount_What_is_the_contribution_amount_for_the_Pradhan_Mantri_Kisan_Maan-Dhan
+  examples: |
+    - What is the contribution amount for the Pradhan Mantri Kisan Maan-Dhan Yojana
+    - Tell me What is the contribution amount for the Pradhan Mantri Kisan Maan-Dhan Yojana
+
+- intent: benifits_Can_I_avail_of_the_benefits_of_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yoja
+  examples: |
+    - Can I avail of the benefits of the Pradhan Mantri Kisan Maan-Dhan Yojana if I already have a pension scheme
+    - Tell me Can I avail of the benefits of the Pradhan Mantri Kisan Maan-Dhan Yojana if I already have a pension scheme
+
+- intent: refundable_Is_the_enrollment_fee_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_re
+  examples: |
+    - Is the enrollment fee for the Pradhan Mantri Kisan Maan-Dhan Yojana refundable
+    - Tell me Is the enrollment fee for the Pradhan Mantri Kisan Maan-Dhan Yojana refundable
+
+- intent: min_max_What_is_the_minimum_and_maximum_age_limit_to_enroll_in_the_Pradhan_Man
+  examples: |
+    - What is the minimum and maximum age limit to enroll in the Pradhan Mantri Kisan Maan-Dhan Yojana
+    - Tell me What is the minimum and maximum age limit to enroll in the Pradhan Mantri Kisan Maan-Dhan Yojana
+
+- intent: availibility_Is_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_available_in_all_states_i
+  examples: |
+    - Is the Pradhan Mantri Kisan Maan-Dhan Yojana available in all states in India
+    - Tell me Is the Pradhan Mantri Kisan Maan-Dhan Yojana available in all states in India
+
+- intent: nomination_Can_I_nominate_someone_to_receive_the_benefits_of_the_Pradhan_Mantri_K
+  examples: |
+    - Can I nominate someone to receive the benefits of the Pradhan Mantri Kisan Maan-Dhan Yojana in case of my death
+    - Tell me Can I nominate someone to receive the benefits of the Pradhan Mantri Kisan Maan-Dhan Yojana in case of my death
+
+- intent: change_of_nominie_Can_I_change_my_nominee_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana
+  examples: |
+    - Can I change my nominee for the Pradhan Mantri Kisan Maan-Dhan Yojana
+    - Tell me Can I change my nominee for the Pradhan Mantri Kisan Maan-Dhan Yojana
+
+- intent: penalty_Is_there_any_penalty_for_late_payment_of_the_contribution_amount_for_t
+  examples: |
+    - Is there any penalty for late payment of the contribution amount for the Pradhan Mantri Kisan Maan-Dhan Yojana
+    - Tell me Is there any penalty for late payment of the contribution amount for the Pradhan Mantri Kisan Maan-Dhan Yojana
+
+- intent: exit_criteria_Can_I_exit_from_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_before_the_a
+  examples: |
+    - Can I exit from the Pradhan Mantri Kisan Maan-Dhan Yojana before the age of 60
+    - Tell me Can I exit from the Pradhan Mantri Kisan Maan-Dhan Yojana before the age of 60
+
+- intent: cultivable_land_Is_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_available_for_farmers_who
+  examples: |
+    - Is the Pradhan Mantri Kisan Maan-Dhan Yojana available for farmers who do not own cultivable land
+    - Tell me Is the Pradhan Mantri Kisan Maan-Dhan Yojana available for farmers who do not own cultivable land
+
+- intent: cross_benifits_Can_I_avail_of_the_benefits_of_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yoja
+  examples: |
+    - Can I avail of the benefits of the Pradhan Mantri Kisan Maan-Dhan Yojana if I am already receiving benefits under other government schemes
+    - Tell me Can I avail of the benefits of the Pradhan Mantri Kisan Maan-Dhan Yojana if I am already receiving benefits under other government schemes
+
+- intent: pension_amount_How_will_the_pension_amount_be_disbursed_under_the_Pradhan_Mantri_Kisa
+  examples: |
+    - How will the pension amount be disbursed under the Pradhan Mantri Kisan Maan-Dhan Yojana
+    - Tell me How will the pension amount be disbursed under the Pradhan Mantri Kisan Maan-Dhan Yojana
+
+- intent: age_relaxation_Is_there_any_age_relaxation_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yoj
+  examples: |
+    - Is there any age relaxation for the Pradhan Mantri Kisan Maan-Dhan Yojana
+    - Tell me Is there any age relaxation for the Pradhan Mantri Kisan Maan-Dhan Yojana
+
+- intent: provision_for_PMKMNDY_Is_there_any_provision_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_f
+  examples: |
+    - Is there any provision for the Pradhan Mantri Kisan Maan-Dhan Yojana for disabled farmers
+    - Tell me Is there any provision for the Pradhan Mantri Kisan Maan-Dhan Yojana for disabled farmers
+
+- intent: change_in_amount_Can_I_change_my_contribution_amount_for_the_Pradhan_Mantri_Kisan_Maan-
+  examples: |
+    - Can I change my contribution amount for the Pradhan Mantri Kisan Maan-Dhan Yojana
+    - Tell me Can I change my contribution amount for the Pradhan Mantri Kisan Maan-Dhan Yojana
+
+- intent: PMKSY_What_is_Pradhan_Mantri_Krishi_Sinchayee_Yojana_(PMKSY)_approved_by_NDA
+  examples: |
+    - What is Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) approved by NDA Government
+    - Tell me What is Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) approved by NDA Government
+
+- intent: PMKSY_What_are_the_major_objectives_of_PMKSY
+  examples: |
+    - What are the major objectives of PMKSY
+    - Tell me What are the major objectives of PMKSY
+
+- intent: programmes_What_are_the_programmes_for_achieving_the_objectives
+  examples: |
+    - What are the programmes for achieving the objectives
+    - Tell me What are the programmes for achieving the objectives
+
+- intent: role_of_MP_What_will_be_role_of_Member_of_Parliament_(MP)orMember_of_Legislative_
+  examples: |
+    - What will be role of Member of Parliament (MP)orMember of Legislative Assembly (MLA) in planning and implementation of PMKSY
+    - Tell me What will be role of Member of Parliament (MP)orMember of Legislative Assembly (MLA) in planning and implementation of PMKSY
+
+- intent: micro_irrigation_What_is_the_pattern_of_assistance_under_micro_irrigation_scheme_of_PMK
+  examples: |
+    - What is the pattern of assistance under micro irrigation scheme of PMKSY
+    - Tell me What is the pattern of assistance under micro irrigation scheme of PMKSY
+
+- intent: subsidy_release_What_is_the_method_of_subsidy_release_to_the_beneficiary
+  examples: |
+    - What is the method of subsidy release to the beneficiary
+    - Tell me What is the method of subsidy release to the beneficiary
+
+- intent: funds_Funds_are_being_provided_to_three_ministries_and_what_will_be_the_syst
+  examples: |
+    - Funds are being provided to three ministries and what will be the system for integration and effective implementation of the programme?
+    - Tell me Funds are being provided to three ministries and what will be the system for integration and effective implementation of the programme?
+
+- intent: GST_rate_What_is_the_GST_rate_applicable_for_Micro_Irrigation_Systems?
+  examples: |
+    - What is the GST rate applicable for Micro Irrigation Systems?
+    - Tell me What is the GST rate applicable for Micro Irrigation Systems?
+
+- intent: facilities_What_are_the_facilities_provided_under_PMKSY-Per_Drop_More_Crop
+  examples: |
+    - What are the facilities provided under PMKSY-Per Drop More Crop
+    - Tell me What are the facilities provided under PMKSY-Per Drop More Crop
+
+- intent: benifits_PMKSY_How_to_get_benefit_of_scheme
+  examples: |
+    - How to get benefit of scheme
+    - Tell me How to get benefit of scheme
+
+- intent: PMKSY_What_is_the_objective_of_Pradhan_Mantri_Kisan_Sampada_Yojana
+  examples: |
+    - What is the objective of Pradhan Mantri Kisan Sampada Yojana
+    - Tell me What is the objective of Pradhan Mantri Kisan Sampada Yojana
+
+- intent: components_What_are_the_components_of_Pradhan_Mantri_Kisan_Sampada_Yojana
+  examples: |
+    - What are the components of Pradhan Mantri Kisan Sampada Yojana
+    - Tell me What are the components of Pradhan Mantri Kisan Sampada Yojana
+
+- intent: eligibility_Who_is_eligible_to_apply_for_Pradhan_Mantri_Kisan_Sampada_Yojana
+  examples: |
+    - Who is eligible to apply for Pradhan Mantri Kisan Sampada Yojana
+    - Tell me Who is eligible to apply for Pradhan Mantri Kisan Sampada Yojana
+
+- intent: application_How_can_I_apply_for_Pradhan_Mantri_Kisan_Sampada_Yojana
+  examples: |
+    - How can I apply for Pradhan Mantri Kisan Sampada Yojana
+    - Tell me How can I apply for Pradhan Mantri Kisan Sampada Yojana
+
+- intent: assistance_provided_What_is_the_financial_assistance_provided_under_Pradhan_Mantri_Kisan_S
+  examples: |
+    - What is the financial assistance provided under Pradhan Mantri Kisan Sampada Yojana
+    - Tell me What is the financial assistance provided under Pradhan Mantri Kisan Sampada Yojana
+
+- intent: duration_What_is_the_duration_of_the_implementation_of_the_project_under_Pradha
+  examples: |
+    - What is the duration of the implementation of the project under Pradhan Mantri Kisan Sampada Yojana
+    - Tell me What is the duration of the implementation of the project under Pradhan Mantri Kisan Sampada Yojana
+
+- intent: progress_How_is_the_progress_of_the_project_monitored_under_Pradhan_Mantri_Kisa
+  examples: |
+    - How is the progress of the project monitored under Pradhan Mantri Kisan Sampada Yojana
+    - Tell me How is the progress of the project monitored under Pradhan Mantri Kisan Sampada Yojana
+
+- intent: changing_location_Can_the_beneficiary_change_the_location_of_the_project_under_Pradhan_M
+  examples: |
+    - Can the beneficiary change the location of the project under Pradhan Mantri Kisan Sampada Yojana
+    - Tell me Can the beneficiary change the location of the project under Pradhan Mantri Kisan Sampada Yojana
+
+- intent: role_of_MOFPI_What_is_the_role_of_the_Ministry_of_Food_Processing_Industries_in_Prad
+  examples: |
+    - What is the role of the Ministry of Food Processing Industries in Pradhan Mantri Kisan Sampada Yojana
+    - Tell me What is the role of the Ministry of Food Processing Industries in Pradhan Mantri Kisan Sampada Yojana
+
+- intent: UPIS_What_is_Unified_Package_Insurance_Scheme?
+  examples: |
+    - What is Unified Package Insurance Scheme?
+    - Tell me What is Unified Package Insurance Scheme?
+
+- intent: Coverage_What_is_covered_under_the_Unified_Package_Insurance_Scheme?
+  examples: |
+    - What is covered under the Unified Package Insurance Scheme?
+    - Tell me What is covered under the Unified Package Insurance Scheme?
+
+- intent: eligibility_Who_is_eligible_for_the_Unified_Package_Insurance_Scheme?
+  examples: |
+    - Who is eligible for the Unified Package Insurance Scheme?
+    - Tell me Who is eligible for the Unified Package Insurance Scheme?
+
+- intent: how_to_enroll_How_do_families_enroll_in_the_Unified_Package_Insurance_Scheme?
+  examples: |
+    - How do families enroll in the Unified Package Insurance Scheme?
+    - Tell me How do families enroll in the Unified Package Insurance Scheme?
+
+- intent: cost_for_enrollment_Is_there_a_cost_for_enrollment_in_the_Unified_Package_Insurance_Scheme
+  examples: |
+    - Is there a cost for enrollment in the Unified Package Insurance Scheme?
+    - Tell me Is there a cost for enrollment in the Unified Package Insurance Scheme?
+
+- intent: max_coverage_What_is_the_maximum_coverage_provided_under_the_Unified_Package_Insura
+  examples: |
+    - What is the maximum coverage provided under the Unified Package Insurance Scheme?
+    - Tell me What is the maximum coverage provided under the Unified Package Insurance Scheme?
+
+- intent: claim_How_can_families_make_a_claim_under_the_Unified_Package_Insurance_Sche
+  examples: |
+    - How can families make a claim under the Unified Package Insurance Scheme?
+    - Tell me How can families make a claim under the Unified Package Insurance Scheme?
+
+- intent: medical_conditions_Are_pre-existing_medical_conditions_covered_under_the_Unified_Package_
+  examples: |
+    - Are pre-existing medical conditions covered under the Unified Package Insurance Scheme?
+    - Tell me Are pre-existing medical conditions covered under the Unified Package Insurance Scheme?
+
+- intent: Krishi_Udan_What_is_Krishi_UDAN
+  examples: |
+    - What is Krishi UDAN
+    - Tell me What is Krishi UDAN
+
+- intent: eligibility_Who_is_eligible_for_Krishi_UDAN
+  examples: |
+    - Who is eligible for Krishi UDAN
+    - Tell me Who is eligible for Krishi UDAN
+
+- intent: working_How_does_Krishi_UDAN_work
+  examples: |
+    - How does Krishi UDAN work
+    - Tell me How does Krishi UDAN work
+
+- intent: benifits_What_is_the_benefit_of_Krishi_UDAN_to_farmers
+  examples: |
+    - What is the benefit of Krishi UDAN to farmers
+    - Tell me What is the benefit of Krishi UDAN to farmers
+
+- intent: farmers_participation_How_can_farmers_participate_in_Krishi_UDAN
+  examples: |
+    - How can farmers participate in Krishi UDAN
+    - Tell me How can farmers participate in Krishi UDAN
+
+- intent: airlines_Which_airlines_participate_in_Krishi_UDAN
+  examples: |
+    - Which airlines participate in Krishi UDAN
+    - Tell me Which airlines participate in Krishi UDAN
+
+- intent: types_What_are_the_types_of_agricultural_produce_that_can_be_transported_und
+  examples: |
+    - What are the types of agricultural produce that can be transported under Krishi UDAN
+    - Tell me What are the types of agricultural produce that can be transported under Krishi UDAN
+
+- intent: subsidy_provided_What_is_the_subsidy_provided_under_Krishi_UDAN
+  examples: |
+    - What is the subsidy provided under Krishi UDAN
+    - Tell me What is the subsidy provided under Krishi UDAN
+
+- intent: impact_How_has_Krishi_UDAN_impacted_the_agriculture_sector_in_India
+  examples: |
+    - How has Krishi UDAN impacted the agriculture sector in India
+    - Tell me How has Krishi UDAN impacted the agriculture sector in India
+
+
+

@@ -1,0 +1,381 @@
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+
+  
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    margin: 0 auto; 
+    overflow: hidden;
+    background-image: url("pikrepo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.news{
+    text-decoration: none;
+}
+
+.icon{
+    margin: 2px;
+   
+    padding-left: 70px;
+}
+
+.icon img{
+    top: 0;
+    width: 100px;
+    height: 70px;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+/* sidebar */
+.sidebar{
+    position: fixed;
+    left: -1500px;
+    width: 70%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 1;
+    transition: all .5s ease;
+    text-transform: uppercase;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: #222;
+    transition: all .5s ease;
+}
+
+.sidebar header{
+    font-size: 42px;
+    text-align: center;
+    line-height: 90px;
+    background: #003cb3;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.sidebar header a{
+    color: #fff;
+}
+.sidebar ul{
+    margin-top: 10px;
+    list-style-type: none;
+    font-weight: 400;
+
+}
+
+.sidebar ul a{
+    display: block;
+    list-style-type: none;
+    font-size: 22px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    line-height: 80px;
+    transition: .4s;
+}
+.text button:hover{
+    background-color:  #002a80;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover a{
+    font-size: 30px;
+}
+a:hover {
+    color: #003cb3;
+}
+
+#check{
+    display: none;
+}
+
+label #btn,label #cancel{
+    position: absolute;
+    border-radius: 3px;
+    cursor: pointer;
+}
+label #btn{
+    left: 10px;
+    top: 15px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 15px;
+    font-size: 40px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 10px;
+}
+
+#check:checked ~ h1 {
+    display: none;
+}
+
+/* banner and news */
+
+.slider{
+    
+    width: 100%;
+    overflow: hidden;
+}
+  
+.slides{
+    width: 500% ;
+    display: flex;
+}
+  
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+  
+.slide img{
+    width: 100%;
+}
+  
+.banner img{
+    z-index: -2;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    width: 90% ;
+    height: 300px;
+    
+}
+
+.text{
+    margin: 2rem;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    font-size: large;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+
+}
+
+.text p{
+    font-size: large;
+    font-style: italic;
+}
+
+.text button{
+
+    padding: 10px 20px;
+    background-color: #003cb3;
+    border-radius: 18px;
+    color: white;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+    margin-left: 10px;
+    margin: auto;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.text button a{
+    text-decoration: none;
+    color: #fff ;
+    font-size: 1.5rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: headline;
+    src: url("Chomsky.otf") format("opentype");
+}
+
+.news {
+    /* border-radius: 30px; */
+    background-color:#e6e7e1;
+    width: 600px;
+    height: 300px;
+    border: 7px solid #414045; 
+    margin: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+.news::-webkit-scrollbar {
+    margin: 100px;
+    width: 8px;
+    height: 10px;
+    border-radius: 10px;
+	background-color: #e6e7e1;
+}
+  
+.news::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #e6e7e1;
+}
+  
+.news::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+	background-color: #999999;
+}
+
+.news h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: headline;
+    color: #414045;
+    text-align: center;
+    font-size: 50px;
+}
+.news ul a{
+    text-decoration: none;
+    margin: 2px;
+    font-size: 22px;
+    color: #414045;
+    line-height: 1.6;
+}
+
+
+  /*manual slide navigation*/
+  
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+  
+.manual-btn{
+    z-index: 1;
+    border: 2px solid #003cb3;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+  
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+  
+.manual-btn:hover{
+    background: #003cb3;
+}
+  
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+  
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+  
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+  
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+  
+  /* automatic navigation*/
+  
+.navigation-auto{
+    position: absolute;
+    display: none;
+    width: 100%;
+    justify-content: center;
+    margin-top: 460px;
+}
+  
+.navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+  
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+  
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+}
+  
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+}
+  
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+}
+  
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+}
+
+.contact{
+    position: absolute;
+    margin-left: 1350px;
+    margin-top: -356px;
+    text-decoration: none;
+   
+}
+
+.contact a:hover{
+   text-decoration: underline;
+}
+
+.contact a{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: large;
+    color: black;
+    font-weight: 500;
+    
+
+}
+
+.imagee{
+    position: absolute;
+    margin-left: 1315px;
+    margin-top: -358px;
+
+}
+        

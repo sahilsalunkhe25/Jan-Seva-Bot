@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="chatp.css">
+        <link rel="stylesheet" href="form.css">
+        
+        <title>Pradhan Mantri Kisan Samman Nidhi (PM-Kisan)</title>
+    </head>
+
+    <body >
+        
+<div id="blur">
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+
+        <i class="fa fa-angle-left" id="cancel"></i>
+    </label>
+
+    <h1 class="icon"><a href="index.html"><img src="icon.png" alt=""></a></h1>
+
+    <div class="sidebar">
+        <header><a href="index.html"> Jan Seva Bot</a></header>
+        <ul class="links">
+            <li><a href="p1.html">Pradhan Mantri Fasal bima yojana</a></li>
+            <li><a href="p2.html">Pradhan Mantri Kisan Sampada Yojana</a></li>
+            <li><a href="p3.html">Jan Dhan Yojna</a></li>
+            <li><a href="p4.html">Pradhan Mantri Suraksha Bima Yojana</a></li>
+            <li><a href="p5.html">PM Mudra Yojna</a></li>
+            <li><a href="p6.html">PRADHAN MANTRI KISAN SANMAN NIDHI / PM - KISAN SCHEME</a></li>
+            <li><a href="p7.html">Kisan credit card (KCC)</a></li>
+            <li><a href="p8.html">Pradhan Mantri Kisan Maan-Dhan Yojana (PM-KMY)</a></li>
+        </ul>
+    </div>
+
+    <div class="banner"><img src="p6.jpg" alt=""></div>
+
+
+    <div class="textbox">
+    <h1>Pradhan Mantri Kisan Samman Nidhi (PM-Kisan)</h1>
+    <p>Pradhan Mantri Kisan Samman Nidhi (PM-Kisan) is a government of India scheme launched in 2018 to provide financial assistance to small and marginal farmers across the country. The scheme aims to provide direct income support to farmers to meet their agricultural expenses and improve their economic well-being.</p>
+    <p>Objective: The main objective of PM-Kisan is to provide financial assistance to small and marginal farmers in the form of direct income support. The scheme aims to ensure a stable income for farmers, enable them to meet their agricultural expenses, and support their livelihoods.</p>
+    </div>
+    
+
+    </div>
+    <div class="form-btn" id="form-btn"><button onclick="openForm(); toggle()">Check for eligibility</button></div>
+
+      
+    <div class="form-popup" id="myForm">
+        <div class="container">
+        <div class="chat-body">
+                <div class="chat-header">
+                  <div class="logo">
+                    <img src="iconchat.png" alt="cwt" />
+                  </div>
+                 JAN SEVA BOT
+                </div>
+           <form action="" class="MyForm">
+            1) Do you own institutional land?
+              <br>
+              <input type="radio" name="Question1" value="Yes"> Yes 
+              <input type="radio" name="Question1" value="No"> No  
+              <br><br>
+            2) Individuals in your who hold or have held a constitutional post?
+              <br>
+              <input type="radio" name="Question2" value="Yes"> Yes 
+              <input type="radio" name="Question2" value="No"> No  
+              <br><br>
+            3) Have you filed income tax in the previous Assessment Year (AY)?
+              <br>
+              <input type="radio" name="Question3" value="Yes"> Yes 
+              <input type="radio" name="Question3" value="No"> No  
+              <br><br>
+            4) Have you retired from a job and receive a pension of more than 10000?
+              <br>
+              <input type="radio" name="Question4" value="Yes"> Yes 
+              <input type="radio" name="Question4" value="No"> No  
+              <br><br>
+            5) Is any member of your family holding a government post?
+              <br>
+              <input type="radio" name="Question5" value="Yes"> Yes 
+              <input type="radio" name="Question5" value="No"> No  
+              <br><br>
+            <button type="submit" class="btn">Check Eligibility</button>
+           </form>
+           <p class="message"></p>
+        </div>
+      </div>
+    </div>
+
+</body>
+<!--  blur -->
+<!-- for blur ends -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="form.js"></script>
+<script src="chat.js"></script>
+        
+</html>

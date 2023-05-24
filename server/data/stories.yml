@@ -1,0 +1,771 @@
+version: "3.1"
+
+stories:
+- story: query6
+  steps: 
+  - intent: crop_insurance_What_is_Crop_Insurance
+  - action: utter_crop_insurance_What_is_Crop_Insurance
+
+- story: query7
+  steps: 
+  - intent: objective_Objective_of_PMFBY
+  - action: utter_objective_Objective_of_PMFBY
+
+- story: query8
+  steps: 
+  - intent: crop_insurance_What_is_Weather_based_Crop_Insurance
+  - action: utter_crop_insurance_What_is_Weather_based_Crop_Insurance
+
+- story: query9
+  steps: 
+  - intent: crop_insurance_How_many_Coverage_of_Crops
+  - action: utter_crop_insurance_How_many_Coverage_of_Crops
+
+- story: query10
+  steps: 
+  - intent: coverage_limit_What_are_Sum_Insured_/Coverage_Limit
+  - action: utter_coverage_limit_What_are_Sum_Insured_/Coverage_Limit
+
+- story: query11
+  steps: 
+  - intent: date_Last_date_for_Crop_Insurance_Kharif_Season
+  - action: utter_date_Last_date_for_Crop_Insurance_Kharif_Season
+
+- story: query12
+  steps: 
+  - intent: crop_insurance_How_many_companies_providing_Crop_Insurance
+  - action: utter_crop_insurance_How_many_companies_providing_Crop_Insurance
+
+- story: query13
+  steps: 
+  - intent: risks_What_types_of_Risks_to_be_covered_&_exclusions?
+  - action: utter_risks_What_types_of_Risks_to_be_covered_&_exclusions?
+
+- story: query14
+  steps: 
+  - intent: claim_settlement_PROCEDURE_FOR_SETTLEMENT_OF_CLAIMS
+  - action: utter_claim_settlement_PROCEDURE_FOR_SETTLEMENT_OF_CLAIMS
+
+- story: query15
+  steps: 
+  - intent: PMFBY_What_is_Pradhan_Mantri_Fasal_Bima_Yojana
+  - action: utter_PMFBY_What_is_Pradhan_Mantri_Fasal_Bima_Yojana
+
+- story: query16
+  steps: 
+  - intent: reasons_What_are_the_reasons_due_to_which_crop_gets_affected_and_risks_covered
+  - action: utter_reasons_What_are_the_reasons_due_to_which_crop_gets_affected_and_risks_covered
+
+- story: query17
+  steps: 
+  - intent: claim_assesment_How_is_the_assessment_of_claim_done
+  - action: utter_claim_assesment_How_is_the_assessment_of_claim_done
+
+- story: query18
+  steps: 
+  - intent: Premium_rates_What_are_the_Premium_Rates_charged_under_this_scheme
+  - action: utter_Premium_rates_What_are_the_Premium_Rates_charged_under_this_scheme
+
+- story: query19
+  steps: 
+  - intent: sowing_claim_How_is_prevented_sowing_claim_applicable_for_farmers
+  - action: utter_sowing_claim_How_is_prevented_sowing_claim_applicable_for_farmers
+
+- story: query20
+  steps: 
+  - intent: PMKSN_What_is_Pradhan_Mantri_Kisan_Samman_Nidhi
+  - action: utter_PMKSN_What_is_Pradhan_Mantri_Kisan_Samman_Nidhi
+
+- story: query21
+  steps: 
+  - intent: SMF_Whether_the_benefits_of_the_scheme_are_admissible_to_only_Small_&_Marg
+  - action: utter_SMF_Whether_the_benefits_of_the_scheme_are_admissible_to_only_Small_&_Marg
+
+- story: query22
+  steps: 
+  - intent: Benifits_PMKSN_What_are_the_benefits_of_pm_kisan_sanman_nidhi_Scheme
+  - action: utter_Benifits_PMKSN_What_are_the_benefits_of_pm_kisan_sanman_nidhi_Scheme
+
+- story: query23
+  steps: 
+  - intent: launch_date_When_was_the_scheme_launched
+  - action: utter_launch_date_When_was_the_scheme_launched
+
+- story: query24
+  steps: 
+  - intent: start_date_From_which_date_the_Scheme_has_come_into_effect
+  - action: utter_start_date_From_which_date_the_Scheme_has_come_into_effect
+
+- story: query25
+  steps: 
+  - intent: eligible_people_Who_are_eligible_to_get_benefits_under_pm_kisan_sanman_nidhi
+  - action: utter_eligible_people_Who_are_eligible_to_get_benefits_under_pm_kisan_sanman_nidhi
+
+- story: query26
+  steps: 
+  - intent: not_eligible_Who_are_not_eligible_to_get_benefits_under_the_Scheme_of_pm_kisan_sanm
+  - action: utter_not_eligible_Who_are_not_eligible_to_get_benefits_under_the_Scheme_of_pm_kisan_sanm
+
+- story: query27
+  steps: 
+  - intent: benifit_details_How_many_times_the_benefit_will_be_given_in_a_year
+  - action: utter_benifit_details_How_many_times_the_benefit_will_be_given_in_a_year
+
+- story: query28
+  steps: 
+  - intent: benifit_criteria_Whether_an_employee_of_the_CentralorState_Government_or_PSU_or_Autonom
+  - action: utter_benifit_criteria_Whether_an_employee_of_the_CentralorState_Government_or_PSU_or_Autonom
+
+- story: query29
+  steps: 
+  - intent: two_hectare_Will_any_individual_or_farmer_family_owning_more_than_2_hectare_of_cul
+  - action: utter_two_hectare_Will_any_individual_or_farmer_family_owning_more_than_2_hectare_of_cul
+
+- story: query30
+  steps: 
+  - intent: law_._What_will_happen_if_the_beneficiary_gives_incorrect_declaration_for_
+  - action: utter_law_._What_will_happen_if_the_beneficiary_gives_incorrect_declaration_for_
+
+- story: query31
+  steps: 
+  - intent: cutoff_date_What_is_the_cutoff_date_for_determination_of_eligibility_of_beneficiar
+  - action: utter_cutoff_date_What_is_the_cutoff_date_for_determination_of_eligibility_of_beneficiar
+
+- story: query32
+  steps: 
+  - intent: death_of_landowner_Whether_the_scheme_benefits_will_be_allowed_in_cases_where_transfer_of
+  - action: utter_death_of_landowner_Whether_the_scheme_benefits_will_be_allowed_in_cases_where_transfer_of
+
+- story: query33
+  steps: 
+  - intent: coverage_limit_What_is_the_coverage_provided_during_standing_crop_stage_for_farmers
+  - action: utter_coverage_limit_What_is_the_coverage_provided_during_standing_crop_stage_for_farmers
+
+- story: query34
+  steps: 
+  - intent: loss_covered_If_the_crop_is_harvested_is_loss_covered_after_that_also_and_to_what_e
+  - action: utter_loss_covered_If_the_crop_is_harvested_is_loss_covered_after_that_also_and_to_what_e
+
+- story: query35
+  steps: 
+  - intent: crops_covered_Which_crop_can_be_covered_under_Pradhan_Mantri_Fasal_Bima_Yojana_schem
+  - action: utter_crops_covered_Which_crop_can_be_covered_under_Pradhan_Mantri_Fasal_Bima_Yojana_schem
+
+- story: query36
+  steps: 
+  - intent: NPSR_What_would_be_the_Normal_Premium_subsidy_ratio
+  - action: utter_NPSR_What_would_be_the_Normal_Premium_subsidy_ratio
+
+- story: query37
+  steps: 
+  - intent: extent_of_coverage_What_is_the_extent_of_coverage_available_for_the_crops
+  - action: utter_extent_of_coverage_What_is_the_extent_of_coverage_available_for_the_crops
+
+- story: query38
+  steps: 
+  - intent: timelines_of_PMFBY_Is_there_any_timelines_for_enrollment_for_PMFBY
+  - action: utter_timelines_of_PMFBY_Is_there_any_timelines_for_enrollment_for_PMFBY
+
+- story: query39
+  steps: 
+  - intent: Sum_insured_What_is_Sum_Insured_Limit_for_individual_farmer
+  - action: utter_Sum_insured_What_is_Sum_Insured_Limit_for_individual_farmer
+
+- story: query40
+  steps: 
+  - intent: settlement_claims_What_is_the_basis_of_settlement_of_claims_for_farmer
+  - action: utter_settlement_claims_What_is_the_basis_of_settlement_of_claims_for_farmer
+
+- story: query41
+  steps: 
+  - intent: preconditions_What_are_the_Preconditions_for_the_State_for_implementation_of_this_sc
+  - action: utter_preconditions_What_are_the_Preconditions_for_the_State_for_implementation_of_this_sc
+
+- story: query42
+  steps: 
+  - intent: process_What_is_the_Process_that_State_follows_and_notification
+  - action: utter_process_What_is_the_Process_that_State_follows_and_notification
+
+- story: query43
+  steps: 
+  - intent: cutoff_date_Are_there_any_cut_off_dates_to_enroll
+  - action: utter_cutoff_date_Are_there_any_cut_off_dates_to_enroll
+
+- story: query44
+  steps: 
+  - intent: data_entry_Are_there_any_cut_off_dates_to_enter_data_in_the_portal
+  - action: utter_data_entry_Are_there_any_cut_off_dates_to_enter_data_in_the_portal
+
+- story: query45
+  steps: 
+  - intent: yeild_data_When_do_the_States_provide_the_yield_data_to_Insurance_Companies
+  - action: utter_yeild_data_When_do_the_States_provide_the_yield_data_to_Insurance_Companies
+
+- story: query46
+  steps: 
+  - intent: settle_claims_By_when_will_Insurance_Company_settle_the_claims_after_receiving_the_d
+  - action: utter_settle_claims_By_when_will_Insurance_Company_settle_the_claims_after_receiving_the_d
+
+- story: query47
+  steps: 
+  - intent: process_to_inform_What_is_the_process_to_inform_the_company_about_crop_sown_and_changes
+  - action: utter_process_to_inform_What_is_the_process_to_inform_the_company_about_crop_sown_and_changes
+
+- story: query48
+  steps: 
+  - intent: commisions_What_are_the_Commission_and_Bank_charges_payable_to_bankers_and_interm
+  - action: utter_commisions_What_are_the_Commission_and_Bank_charges_payable_to_bankers_and_interm
+
+- story: query49
+  steps: 
+  - intent: service_tax_Is_service_tax_applicable_under_this_scheme
+  - action: utter_service_tax_Is_service_tax_applicable_under_this_scheme
+
+- story: query50
+  steps: 
+  - intent: transfer_Whether_transfer_of_ownership_occurred_between_01.12.2018_and_31.01.20
+  - action: utter_transfer_Whether_transfer_of_ownership_occurred_between_01.12.2018_and_31.01.20
+
+- story: query51
+  steps: 
+  - intent: income_tax_payee_._ls_an_income_tax_payee_farmer_or_his_or_her_spouse_eligible_to_get_b
+  - action: utter_income_tax_payee_._ls_an_income_tax_payee_farmer_or_his_or_her_spouse_eligible_to_get_b
+
+- story: query52
+  steps: 
+  - intent: def_of_family_What_is_the_definition_of_'family'_under_the_Scheme_of_pradhan_mantri_
+  - action: utter_def_of_family_What_is_the_definition_of_'family'_under_the_Scheme_of_pradhan_mantri_
+
+- story: query53
+  steps: 
+  - intent: PMKSN_criteria_ls_any_person_or_farmer_who_is_cultivating_a_land_but_is_not_having_th
+  - action: utter_PMKSN_criteria_ls_any_person_or_farmer_who_is_cultivating_a_land_but_is_not_having_th
+
+- story: query54
+  steps: 
+  - intent: beneficiaries_How_the_beneficiaries_under_the_pm_kisan_sanman_nidhi_will_be_identifi
+  - action: utter_beneficiaries_How_the_beneficiaries_under_the_pm_kisan_sanman_nidhi_will_be_identifi
+
+- story: query55
+  steps: 
+  - intent: information_for_PMKSN_What_is_the_mandatory_information_required_to_be_submitted_on_PM-KISAN
+  - action: utter_information_for_PMKSN_What_is_the_mandatory_information_required_to_be_submitted_on_PM-KISAN
+
+- story: query56
+  steps: 
+  - intent: registration_confirmation_._How_does_a_landholder_farmers'family_know_that_his_or_her_name_is_in
+  - action: utter_registration_confirmation_._How_does_a_landholder_farmers'family_know_that_his_or_her_name_is_in
+
+- story: query57
+  steps: 
+  - intent: remedy_available_What_is_the_remedy_available_for_eligible_beneficiary_if_hisorher_name
+  - action: utter_remedy_available_What_is_the_remedy_available_for_eligible_beneficiary_if_hisorher_name
+
+- story: query58
+  steps: 
+  - intent: financial_benifit_lf_there_are_multiple_farmers'_families_whose_names_are_recorded_on_a_
+  - action: utter_financial_benifit_lf_there_are_multiple_farmers'_families_whose_names_are_recorded_on_a_
+
+- story: query59
+  steps: 
+  - intent: monetary_benifit_Will_be_monetary_benefit_under_the_Scheme_of_pm_kisan_sanman_nidhi_be_
+  - action: utter_monetary_benifit_Will_be_monetary_benefit_under_the_Scheme_of_pm_kisan_sanman_nidhi_be_
+
+- story: query60
+  steps: 
+  - intent: account_details_Whether_it_is_compulsory_for_beneficiaries_to_give_their_bank_account
+
+  - action: utter_account_details_Whether_it_is_compulsory_for_beneficiaries_to_give_their_bank_account
+
+
+- story: query61
+  steps: 
+  - intent: aadhar_details_._Whether_giving_Aadhaar_details_is_mandatory_for_availing_benefit_und
+  - action: utter_aadhar_details_._Whether_giving_Aadhaar_details_is_mandatory_for_availing_benefit_und
+
+- story: query62
+  steps: 
+  - intent: urban_area_farmers_Whether_farmers_in_villages_situated_in_urban_areas_are_eligible_for_t
+  - action: utter_urban_area_farmers_Whether_farmers_in_villages_situated_in_urban_areas_are_eligible_for_t
+
+- story: query63
+  steps: 
+  - intent: micro_land_Whether_micro_land_holdings_are_admissible_for_availing_the_benefit_of
+  - action: utter_micro_land_Whether_micro_land_holdings_are_admissible_for_availing_the_benefit_of
+
+- story: query64
+  steps: 
+  - intent: prescribed_mechanism_What_is_the_prescribed_mechanism_for_validation_of_information_or_decl
+  - action: utter_prescribed_mechanism_What_is_the_prescribed_mechanism_for_validation_of_information_or_decl
+
+- story: query65
+  steps: 
+  - intent: cutoff_date_What_is_the_cut-off_date_for_'minor'_children_becoming_'major'_under_t
+  - action: utter_cutoff_date_What_is_the_cut-off_date_for_'minor'_children_becoming_'major'_under_t
+
+- story: query66
+  steps: 
+  - intent: non_agricultural_purpose_._Whether_farmers_may_avail_the_benefit_of_the_Scheme_against_agricult
+  - action: utter_non_agricultural_purpose_._Whether_farmers_may_avail_the_benefit_of_the_Scheme_against_agricult
+
+- story: query67
+  steps: 
+  - intent: installments_What_is_the_procedure_of_release_of_installments_to_the_beneficiaries
+  - action: utter_installments_What_is_the_procedure_of_release_of_installments_to_the_beneficiaries
+
+- story: query68
+  steps: 
+  - intent: installments_criteria_If_a_farmer_registered_under_the_Scheme_does_not_receive_any_installme
+  - action: utter_installments_criteria_If_a_farmer_registered_under_the_Scheme_does_not_receive_any_installme
+
+- story: query69
+  steps: 
+  - intent: mandatory_information_What_is_the_mandatory_information_required_to_be_submitted_on_PM-KISAN
+  - action: utter_mandatory_information_What_is_the_mandatory_information_required_to_be_submitted_on_PM-KISAN
+
+- story: query70
+  steps: 
+  - intent: incorrect_declaration_What_will_happen_if_the_beneficiary_gives_incorrect_declaration_for_pm
+  - action: utter_incorrect_declaration_What_will_happen_if_the_beneficiary_gives_incorrect_declaration_for_pm
+
+- story: query71
+  steps: 
+  - intent: credit_card_scheme_What_is_kisan_credit_card_scheme
+  - action: utter_credit_card_scheme_What_is_kisan_credit_card_scheme
+
+- story: query72
+  steps: 
+  - intent: use_Can_I_use_my_Kisan_Credit_Card_to_withdraw_cash_from_the_ATM
+  - action: utter_use_Can_I_use_my_Kisan_Credit_Card_to_withdraw_cash_from_the_ATM
+
+- story: query73
+  steps: 
+  - intent: credit_limit_How_is_the_credit_limit_decided_for_Kisan_Credit_Card
+  - action: utter_credit_limit_How_is_the_credit_limit_decided_for_Kisan_Credit_Card
+
+- story: query74
+  steps: 
+  - intent: number_of_withdrawals_How_many_withdrawals_can_I_make_using_the_Kisan_Credit_Card
+  - action: utter_number_of_withdrawals_How_many_withdrawals_can_I_make_using_the_Kisan_Credit_Card
+
+- story: query75
+  steps: 
+  - intent: POS_Can_I_use_the_Kisan_Credit_Card_at_merchant_Point_of_Sale_(POS)_termin
+  - action: utter_POS_Can_I_use_the_Kisan_Credit_Card_at_merchant_Point_of_Sale_(POS)_termin
+
+- story: query76
+  steps: 
+  - intent: insurance_premium_What_is_the_insurance_premium_for_personal_accident_insurance_scheme_a
+  - action: utter_insurance_premium_What_is_the_insurance_premium_for_personal_accident_insurance_scheme_a
+
+- story: query77
+  steps: 
+  - intent: validity_period_What_is_the_validity_period_for_Kisan_Credit_Card
+  - action: utter_validity_period_What_is_the_validity_period_for_Kisan_Credit_Card
+
+- story: query78
+  steps: 
+  - intent: online_application_Can_I_apply_for_the_Kisan_Credit_Card_online_from_my_bank
+  - action: utter_online_application_Can_I_apply_for_the_Kisan_Credit_Card_online_from_my_bank
+
+- story: query79
+  steps: 
+  - intent: insurance_cover_What_type_of_insurance_cover_do_the_Kisan_Credit_Card_(KCC)_Holders_ge
+  - action: utter_insurance_cover_What_type_of_insurance_cover_do_the_Kisan_Credit_Card_(KCC)_Holders_ge
+
+- story: query80
+  steps: 
+  - intent: ratio_In_what_ratio_the_premium_of_Personal_Accident_Insurance_is_borne_by_t
+  - action: utter_ratio_In_what_ratio_the_premium_of_Personal_Accident_Insurance_is_borne_by_t
+
+- story: query81
+  steps: 
+  - intent: type_of_card_What_type_of_credit_is_provided_to_the_Kisan_Credit_Card_(KCC)_Holder
+  - action: utter_type_of_card_What_type_of_credit_is_provided_to_the_Kisan_Credit_Card_(KCC)_Holder
+
+- story: query82
+  steps: 
+  - intent: NAIS_What_is_NAIS?
+  - action: utter_NAIS_What_is_NAIS?
+
+- story: query83
+  steps: 
+  - intent: PAIS_What_is_PAIS?
+  - action: utter_PAIS_What_is_PAIS?
+
+- story: query84
+  steps: 
+  - intent: marginal_farmer_Who_is_a_Marginal_Farmer
+  - action: utter_marginal_farmer_Who_is_a_Marginal_Farmer
+
+- story: query85
+  steps: 
+  - intent: minimum_credit_What_is_the_Minimum_credit_limit_under_Kisan_Credit_Card_(KCC)
+  - action: utter_minimum_credit_What_is_the_Minimum_credit_limit_under_Kisan_Credit_Card_(KCC)
+
+- story: query86
+  steps: 
+  - intent: eligibility_Eligibility_for_kisan_credit_card
+  - action: utter_eligibility_Eligibility_for_kisan_credit_card
+
+- story: query87
+  steps: 
+  - intent: application_How_do_I_apply_for_a_Kisan_Credit_Card
+  - action: utter_application_How_do_I_apply_for_a_Kisan_Credit_Card
+
+- story: query88
+  steps: 
+  - intent: benifits_What_are_the_benefits_of_the_Kisan_Credit_Card_Scheme
+  - action: utter_benifits_What_are_the_benefits_of_the_Kisan_Credit_Card_Scheme
+
+- story: query89
+  steps: 
+  - intent: credits_gained_How_much_credit_can_I_get_through_the_Kisan_Credit_Card_Scheme
+  - action: utter_credits_gained_How_much_credit_can_I_get_through_the_Kisan_Credit_Card_Scheme
+
+- story: query90
+  steps: 
+  - intent: interest_rate_What_is_the_interest_rate_on_Kisan_Credit_Card_loans
+  - action: utter_interest_rate_What_is_the_interest_rate_on_Kisan_Credit_Card_loans
+
+- story: query91
+  steps: 
+  - intent: non_agricultural_purpose_Can_I_use_the_Kisan_Credit_Card_for_non-agricultural_purposes
+  - action: utter_non_agricultural_purpose_Can_I_use_the_Kisan_Credit_Card_for_non-agricultural_purposes
+
+- story: query92
+  steps: 
+  - intent: processing_fee_Is_there_any_processing_fee_for_the_Kisan_Credit_Card_Scheme
+  - action: utter_processing_fee_Is_there_any_processing_fee_for_the_Kisan_Credit_Card_Scheme
+
+- story: query93
+  steps: 
+  - intent: repayment_period_What_is_the_repayment_period_for_Kisan_Credit_Card_loans
+  - action: utter_repayment_period_What_is_the_repayment_period_for_Kisan_Credit_Card_loans
+
+- story: query94
+  steps: 
+  - intent: failed_to_repay_What_happens_if_I_fail_to_repay_my_Kisan_Credit_Card_loan
+  - action: utter_failed_to_repay_What_happens_if_I_fail_to_repay_my_Kisan_Credit_Card_loan
+
+- story: query95
+  steps: 
+  - intent: PMKMNDY_What_is_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_(PM-KMY)
+  - action: utter_PMKMNDY_What_is_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_(PM-KMY)
+
+- story: query96
+  steps: 
+  - intent: benifits_PMKMNDY_What_are_the_benefits_of_the_scheme
+  - action: utter_benifits_PMKMNDY_What_are_the_benefits_of_the_scheme
+
+- story: query97
+  steps: 
+  - intent: eligibiliy_Who_is_eligible_to_get_the_benefits_of_the_scheme
+  - action: utter_eligibiliy_Who_is_eligible_to_get_the_benefits_of_the_scheme
+
+- story: query98
+  steps: 
+  - intent: incorrect_data_What_will_happen_if_the_beneficiary_gives_incorrect_declaration_to_be_
+  - action: utter_incorrect_data_What_will_happen_if_the_beneficiary_gives_incorrect_declaration_to_be_
+
+- story: query99
+  steps: 
+  - intent: information_for_PMKMNDY_What_kind_of_information_needs_to_be_provided_by_the_beneficiary_at_th
+  - action: utter_information_for_PMKMNDY_What_kind_of_information_needs_to_be_provided_by_the_beneficiary_at_th
+
+- story: query100
+  steps: 
+  - intent: Pension_fund_manager_Who_will_act_as_Pension_Fund_Manager_for_the_Scheme
+  - action: utter_Pension_fund_manager_Who_will_act_as_Pension_Fund_Manager_for_the_Scheme
+
+- story: query101
+  steps: 
+  - intent: contribution_Can_contribution_to_the_scheme_be_made_from_the_benefits_received_from
+  - action: utter_contribution_Can_contribution_to_the_scheme_be_made_from_the_benefits_received_from
+
+- story: query102
+  steps: 
+  - intent: Pension_fund_What_would_constitute_a_Pension_Fund
+  - action: utter_Pension_fund_What_would_constitute_a_Pension_Fund
+
+- story: query103
+  steps: 
+  - intent: SMF_Are_StateorUT_Governments_permitted_to_share_the_burden_of_individual_
+  - action: utter_SMF_Are_StateorUT_Governments_permitted_to_share_the_burden_of_individual_
+
+- story: query104
+  steps: 
+  - intent: due_date_What_will_be_the_due_date_for_monthly_contributions
+  - action: utter_due_date_What_will_be_the_due_date_for_monthly_contributions
+
+- story: query105
+  steps: 
+  - intent: CSC_When_would_CSC_issue_a_Pension_Card_to_the_subscriber
+  - action: utter_CSC_When_would_CSC_issue_a_Pension_Card_to_the_subscriber
+
+- story: query106
+  steps: 
+  - intent: Spouses_Will_the_applicant_farmers_or_their_spouses_be_charged_any_fee_for_enr
+  - action: utter_Spouses_Will_the_applicant_farmers_or_their_spouses_be_charged_any_fee_for_enr
+
+- story: query107
+  steps: 
+  - intent: apply_PMKMNDY_How_do_I_apply_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana
+  - action: utter_apply_PMKMNDY_How_do_I_apply_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana
+
+- story: query108
+  steps: 
+  - intent: contri_amount_What_is_the_contribution_amount_for_the_Pradhan_Mantri_Kisan_Maan-Dhan
+  - action: utter_contri_amount_What_is_the_contribution_amount_for_the_Pradhan_Mantri_Kisan_Maan-Dhan
+
+- story: query109
+  steps: 
+  - intent: benifits_Can_I_avail_of_the_benefits_of_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yoja
+  - action: utter_benifits_Can_I_avail_of_the_benefits_of_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yoja
+
+- story: query110
+  steps: 
+  - intent: refundable_Is_the_enrollment_fee_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_re
+  - action: utter_refundable_Is_the_enrollment_fee_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_re
+
+- story: query111
+  steps: 
+  - intent: min_max_What_is_the_minimum_and_maximum_age_limit_to_enroll_in_the_Pradhan_Man
+  - action: utter_min_max_What_is_the_minimum_and_maximum_age_limit_to_enroll_in_the_Pradhan_Man
+
+- story: query112
+  steps: 
+  - intent: availibility_Is_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_available_in_all_states_i
+  - action: utter_availibility_Is_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_available_in_all_states_i
+
+- story: query113
+  steps: 
+  - intent: nomination_Can_I_nominate_someone_to_receive_the_benefits_of_the_Pradhan_Mantri_K
+  - action: utter_nomination_Can_I_nominate_someone_to_receive_the_benefits_of_the_Pradhan_Mantri_K
+
+- story: query114
+  steps: 
+  - intent: change_of_nominie_Can_I_change_my_nominee_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana
+  - action: utter_change_of_nominie_Can_I_change_my_nominee_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana
+
+- story: query115
+  steps: 
+  - intent: penalty_Is_there_any_penalty_for_late_payment_of_the_contribution_amount_for_t
+  - action: utter_penalty_Is_there_any_penalty_for_late_payment_of_the_contribution_amount_for_t
+
+- story: query116
+  steps: 
+  - intent: exit_criteria_Can_I_exit_from_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_before_the_a
+  - action: utter_exit_criteria_Can_I_exit_from_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_before_the_a
+
+- story: query117
+  steps: 
+  - intent: cultivable_land_Is_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_available_for_farmers_who
+  - action: utter_cultivable_land_Is_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_available_for_farmers_who
+
+- story: query118
+  steps: 
+  - intent: cross_benifits_Can_I_avail_of_the_benefits_of_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yoja
+  - action: utter_cross_benifits_Can_I_avail_of_the_benefits_of_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yoja
+
+- story: query119
+  steps: 
+  - intent: pension_amount_How_will_the_pension_amount_be_disbursed_under_the_Pradhan_Mantri_Kisa
+  - action: utter_pension_amount_How_will_the_pension_amount_be_disbursed_under_the_Pradhan_Mantri_Kisa
+
+- story: query120
+  steps: 
+  - intent: age_relaxation_Is_there_any_age_relaxation_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yoj
+  - action: utter_age_relaxation_Is_there_any_age_relaxation_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yoj
+
+- story: query121
+  steps: 
+  - intent: provision_for_PMKMNDY_Is_there_any_provision_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_f
+  - action: utter_provision_for_PMKMNDY_Is_there_any_provision_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_f
+
+- story: query122
+  steps: 
+  - intent: change_in_amount_Can_I_change_my_contribution_amount_for_the_Pradhan_Mantri_Kisan_Maan-
+  - action: utter_change_in_amount_Can_I_change_my_contribution_amount_for_the_Pradhan_Mantri_Kisan_Maan-
+
+- story: query123
+  steps: 
+  - intent: PMKSY_What_is_Pradhan_Mantri_Krishi_Sinchayee_Yojana_(PMKSY)_approved_by_NDA
+  - action: utter_PMKSY_What_is_Pradhan_Mantri_Krishi_Sinchayee_Yojana_(PMKSY)_approved_by_NDA
+
+- story: query124
+  steps: 
+  - intent: PMKSY_What_are_the_major_objectives_of_PMKSY
+  - action: utter_PMKSY_What_are_the_major_objectives_of_PMKSY
+
+- story: query125
+  steps: 
+  - intent: programmes_What_are_the_programmes_for_achieving_the_objectives
+  - action: utter_programmes_What_are_the_programmes_for_achieving_the_objectives
+
+- story: query126
+  steps: 
+  - intent: role_of_MP_What_will_be_role_of_Member_of_Parliament_(MP)orMember_of_Legislative_
+  - action: utter_role_of_MP_What_will_be_role_of_Member_of_Parliament_(MP)orMember_of_Legislative_
+
+- story: query127
+  steps: 
+  - intent: micro_irrigation_What_is_the_pattern_of_assistance_under_micro_irrigation_scheme_of_PMK
+  - action: utter_micro_irrigation_What_is_the_pattern_of_assistance_under_micro_irrigation_scheme_of_PMK
+
+- story: query128
+  steps: 
+  - intent: subsidy_release_What_is_the_method_of_subsidy_release_to_the_beneficiary
+  - action: utter_subsidy_release_What_is_the_method_of_subsidy_release_to_the_beneficiary
+
+- story: query129
+  steps: 
+  - intent: funds_Funds_are_being_provided_to_three_ministries_and_what_will_be_the_syst
+  - action: utter_funds_Funds_are_being_provided_to_three_ministries_and_what_will_be_the_syst
+
+- story: query130
+  steps: 
+  - intent: GST_rate_What_is_the_GST_rate_applicable_for_Micro_Irrigation_Systems?
+  - action: utter_GST_rate_What_is_the_GST_rate_applicable_for_Micro_Irrigation_Systems?
+
+- story: query131
+  steps: 
+  - intent: facilities_What_are_the_facilities_provided_under_PMKSY-Per_Drop_More_Crop
+  - action: utter_facilities_What_are_the_facilities_provided_under_PMKSY-Per_Drop_More_Crop
+
+- story: query132
+  steps: 
+  - intent: benifits_PMKSY_How_to_get_benefit_of_scheme
+  - action: utter_benifits_PMKSY_How_to_get_benefit_of_scheme
+
+- story: query133
+  steps: 
+  - intent: PMKSY_What_is_the_objective_of_Pradhan_Mantri_Kisan_Sampada_Yojana
+  - action: utter_PMKSY_What_is_the_objective_of_Pradhan_Mantri_Kisan_Sampada_Yojana
+
+- story: query134
+  steps: 
+  - intent: components_What_are_the_components_of_Pradhan_Mantri_Kisan_Sampada_Yojana
+  - action: utter_components_What_are_the_components_of_Pradhan_Mantri_Kisan_Sampada_Yojana
+
+- story: query135
+  steps: 
+  - intent: eligibility_Who_is_eligible_to_apply_for_Pradhan_Mantri_Kisan_Sampada_Yojana
+  - action: utter_eligibility_Who_is_eligible_to_apply_for_Pradhan_Mantri_Kisan_Sampada_Yojana
+
+- story: query136
+  steps: 
+  - intent: application_How_can_I_apply_for_Pradhan_Mantri_Kisan_Sampada_Yojana
+  - action: utter_application_How_can_I_apply_for_Pradhan_Mantri_Kisan_Sampada_Yojana
+
+- story: query137
+  steps: 
+  - intent: assistance_provided_What_is_the_financial_assistance_provided_under_Pradhan_Mantri_Kisan_S
+  - action: utter_assistance_provided_What_is_the_financial_assistance_provided_under_Pradhan_Mantri_Kisan_S
+
+- story: query138
+  steps: 
+  - intent: duration_What_is_the_duration_of_the_implementation_of_the_project_under_Pradha
+  - action: utter_duration_What_is_the_duration_of_the_implementation_of_the_project_under_Pradha
+
+- story: query139
+  steps: 
+  - intent: progress_How_is_the_progress_of_the_project_monitored_under_Pradhan_Mantri_Kisa
+  - action: utter_progress_How_is_the_progress_of_the_project_monitored_under_Pradhan_Mantri_Kisa
+
+- story: query140
+  steps: 
+  - intent: changing_location_Can_the_beneficiary_change_the_location_of_the_project_under_Pradhan_M
+  - action: utter_changing_location_Can_the_beneficiary_change_the_location_of_the_project_under_Pradhan_M
+
+- story: query141
+  steps: 
+  - intent: role_of_MOFPI_What_is_the_role_of_the_Ministry_of_Food_Processing_Industries_in_Prad
+  - action: utter_role_of_MOFPI_What_is_the_role_of_the_Ministry_of_Food_Processing_Industries_in_Prad
+
+- story: query142
+  steps: 
+  - intent: UPIS_What_is_Unified_Package_Insurance_Scheme?
+  - action: utter_UPIS_What_is_Unified_Package_Insurance_Scheme?
+
+- story: query143
+  steps: 
+  - intent: Coverage_What_is_covered_under_the_Unified_Package_Insurance_Scheme?
+  - action: utter_Coverage_What_is_covered_under_the_Unified_Package_Insurance_Scheme?
+
+- story: query144
+  steps: 
+  - intent: eligibility_Who_is_eligible_for_the_Unified_Package_Insurance_Scheme?
+  - action: utter_eligibility_Who_is_eligible_for_the_Unified_Package_Insurance_Scheme?
+
+- story: query145
+  steps: 
+  - intent: how_to_enroll_How_do_families_enroll_in_the_Unified_Package_Insurance_Scheme?
+  - action: utter_how_to_enroll_How_do_families_enroll_in_the_Unified_Package_Insurance_Scheme?
+
+- story: query146
+  steps: 
+  - intent: cost_for_enrollment_Is_there_a_cost_for_enrollment_in_the_Unified_Package_Insurance_Scheme
+  - action: utter_cost_for_enrollment_Is_there_a_cost_for_enrollment_in_the_Unified_Package_Insurance_Scheme
+
+- story: query147
+  steps: 
+  - intent: max_coverage_What_is_the_maximum_coverage_provided_under_the_Unified_Package_Insura
+  - action: utter_max_coverage_What_is_the_maximum_coverage_provided_under_the_Unified_Package_Insura
+
+- story: query148
+  steps: 
+  - intent: claim_How_can_families_make_a_claim_under_the_Unified_Package_Insurance_Sche
+  - action: utter_claim_How_can_families_make_a_claim_under_the_Unified_Package_Insurance_Sche
+
+- story: query149
+  steps: 
+  - intent: medical_conditions_Are_pre-existing_medical_conditions_covered_under_the_Unified_Package_
+  - action: utter_medical_conditions_Are_pre-existing_medical_conditions_covered_under_the_Unified_Package_
+
+- story: query150
+  steps: 
+  - intent: Krishi_Udan_What_is_Krishi_UDAN
+  - action: utter_Krishi_Udan_What_is_Krishi_UDAN
+
+- story: query151
+  steps: 
+  - intent: eligibility_Who_is_eligible_for_Krishi_UDAN
+  - action: utter_eligibility_Who_is_eligible_for_Krishi_UDAN
+
+- story: query152
+  steps: 
+  - intent: working_How_does_Krishi_UDAN_work
+  - action: utter_working_How_does_Krishi_UDAN_work
+
+- story: query153
+  steps: 
+  - intent: benifits_What_is_the_benefit_of_Krishi_UDAN_to_farmers
+  - action: utter_benifits_What_is_the_benefit_of_Krishi_UDAN_to_farmers
+
+- story: query154
+  steps: 
+  - intent: farmers_participation_How_can_farmers_participate_in_Krishi_UDAN
+  - action: utter_farmers_participation_How_can_farmers_participate_in_Krishi_UDAN
+
+- story: query155
+  steps: 
+  - intent: airlines_Which_airlines_participate_in_Krishi_UDAN
+  - action: utter_airlines_Which_airlines_participate_in_Krishi_UDAN
+
+- story: query156
+  steps: 
+  - intent: types_What_are_the_types_of_agricultural_produce_that_can_be_transported_und
+  - action: utter_types_What_are_the_types_of_agricultural_produce_that_can_be_transported_und
+
+- story: query157
+  steps: 
+  - intent: subsidy_provided_What_is_the_subsidy_provided_under_Krishi_UDAN
+  - action: utter_subsidy_provided_What_is_the_subsidy_provided_under_Krishi_UDAN
+
+- story: query158
+  steps: 
+  - intent: impact_How_has_Krishi_UDAN_impacted_the_agriculture_sector_in_India
+  - action: utter_impact_How_has_Krishi_UDAN_impacted_the_agriculture_sector_in_India
+
+

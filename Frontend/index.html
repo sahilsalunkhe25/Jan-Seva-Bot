@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
+
+
+</head>
+
+<body>
+    
+    <input type="checkbox" id="check">
+    <label for="check">
+
+        <i class="fas fa-bars" id="btn"></i>
+
+        <i class="fa fa-angle-left" id="cancel"></i>
+    </label>
+
+    <h1 class="icon"><a href="index.html"><img src="icon.png" alt=""></a></h1>
+
+    <div class="sidebar">
+        <header><a href="index.html"> Jan Seva Bot</a></header>
+        <ul class="links">
+            <li><a href="p1.html">Pradhan Mantri Fasal bima yojana</a></li>
+            <li><a href="p2.html">Pradhan Mantri Kisan Sampada Yojana</a></li>
+            <li><a href="p3.html">Jan Dhan Yojna</a></li>
+            <li><a href="p4.html">Pradhan Mantri Suraksha Bima Yojana</a></li>
+            <li><a href="p5.html">PM Mudra Yojna</a></li>
+            <li><a href="p6.html">PRADHAN MANTRI KISAN SANMAN NIDHI / PM - KISAN SCHEME</a></li>
+            <li><a href="p7.html">Kisan credit card (KCC)</a></li>
+            <li><a href="p8.html">Pradhan Mantri Kisan Maan-Dhan Yojana (PM-KMY)</a></li>
+        </ul>
+    </div>
+    <div id="rasa-chat-widget" data-websocket-url="http://localhost:5005/webhook"></div>
+
+    <div class="banner">
+        <!--image slider start-->
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio buttons end-->
+                <!--slide images start-->
+                <div class="slide first">
+                    <img src="x2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="x3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="ban.jpg" alt="">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+        <!--image slider end-->
+        <!-- <img src="imb.jpg" alt=""> -->
+    </div>
+
+    <div class="text">
+        <div class="row">
+            <h1>JAN SEVA BOT</h1>
+        </div>
+        <button><a href="chatbot.html">TRY NOW</a></button>
+
+    </div>
+
+    <div class="contact">
+         <a href="contactus.html">Contact Us</a>
+    </div>
+    <div class="imagee">
+        <img src="icon (2).png" height="30px" width="30px">
+     </div>
+
+    <div class="news">
+        <h1>Top Headlines in India</h1>
+        <ul id="news-list"></ul>
+
+        <script>
+            fetch('https://newsapi.org/v2/top-headlines?country=in&apiKey=0f1197af506241168c6ffe8f614c5794')
+                .then(response => response.json())
+                .then(data => {
+                    const newsList = document.getElementById('news-list');
+                    data.articles.forEach(article => {
+                        const li = document.createElement('li');
+                        const a = document.createElement('a');
+                        a.href = article.url;
+                        a.textContent = article.title;
+                        li.appendChild(a);
+                        newsList.appendChild(li);
+                    });
+                })
+                .catch(error => console.log('ERROR'));
+        </script>
+    </div>
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="home.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</html>

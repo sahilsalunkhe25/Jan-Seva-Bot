@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Chatbot</title>
+  <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #webchat {
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div id="webchat"></div>
+  <script>
+    WebChat.default.init({
+      selector: "#webchat",
+      initPayload: "/get_started",
+      customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+      socketUrl: "http://localhost:5005",
+      socketPath: "/socket.io/",
+      title: "My Chatbot",
+      subtitle: "Subtitle",
+      profileAvatar: "my_avatar.png",
+      showCloseButton: true,
+      fullScreenMode: false,
+      hideWhenNotConnected: true,
+      params: {
+        images: {
+          dims: {
+            width: 300,
+            height: 200,
+          }
+        },
+        storage: "local"
+      }
+    })
+  </script>
+</body>
+</html>

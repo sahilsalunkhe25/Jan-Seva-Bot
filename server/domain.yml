@@ -1,0 +1,994 @@
+version: "3.1"
+# coding: utf-8 
+
+intents:
+  - crop_insurance_What_is_Crop_Insurance
+  - objective_Objective_of_PMFBY
+  - crop_insurance_What_is_Weather_based_Crop_Insurance
+  - crop_insurance_How_many_Coverage_of_Crops
+  - coverage_limit_What_are_Sum_Insured_/Coverage_Limit
+  - date_Last_date_for_Crop_Insurance_Kharif_Season
+  - crop_insurance_How_many_companies_providing_Crop_Insurance
+  - risks_What_types_of_Risks_to_be_covered_&_exclusions?
+  - claim_settlement_PROCEDURE_FOR_SETTLEMENT_OF_CLAIMS
+  - PMFBY_What_is_Pradhan_Mantri_Fasal_Bima_Yojana
+  - reasons_What_are_the_reasons_due_to_which_crop_gets_affected_and_risks_covered
+  - claim_assesment_How_is_the_assessment_of_claim_done
+  - Premium_rates_What_are_the_Premium_Rates_charged_under_this_scheme
+  - sowing_claim_How_is_prevented_sowing_claim_applicable_for_farmers
+  - PMKSN_What_is_Pradhan_Mantri_Kisan_Samman_Nidhi
+  - SMF_Whether_the_benefits_of_the_scheme_are_admissible_to_only_Small_&_Marg
+  - Benifits_PMKSN_What_are_the_benefits_of_pm_kisan_sanman_nidhi_Scheme
+  - launch_date_When_was_the_scheme_launched
+  - start_date_From_which_date_the_Scheme_has_come_into_effect
+  - eligible_people_Who_are_eligible_to_get_benefits_under_pm_kisan_sanman_nidhi
+  - not_eligible_Who_are_not_eligible_to_get_benefits_under_the_Scheme_of_pm_kisan_sanm
+  - benifit_details_How_many_times_the_benefit_will_be_given_in_a_year
+  - benifit_criteria_Whether_an_employee_of_the_CentralorState_Government_or_PSU_or_Autonom
+  - two_hectare_Will_any_individual_or_farmer_family_owning_more_than_2_hectare_of_cul
+  - law_._What_will_happen_if_the_beneficiary_gives_incorrect_declaration_for_
+  - cutoff_date_What_is_the_cutoff_date_for_determination_of_eligibility_of_beneficiar
+  - death_of_landowner_Whether_the_scheme_benefits_will_be_allowed_in_cases_where_transfer_of
+  - coverage_limit_What_is_the_coverage_provided_during_standing_crop_stage_for_farmers
+  - loss_covered_If_the_crop_is_harvested_is_loss_covered_after_that_also_and_to_what_e
+  - crops_covered_Which_crop_can_be_covered_under_Pradhan_Mantri_Fasal_Bima_Yojana_schem
+  - NPSR_What_would_be_the_Normal_Premium_subsidy_ratio
+  - extent_of_coverage_What_is_the_extent_of_coverage_available_for_the_crops
+  - timelines_of_PMFBY_Is_there_any_timelines_for_enrollment_for_PMFBY
+  - Sum_insured_What_is_Sum_Insured_Limit_for_individual_farmer
+  - settlement_claims_What_is_the_basis_of_settlement_of_claims_for_farmer
+  - preconditions_What_are_the_Preconditions_for_the_State_for_implementation_of_this_sc
+  - process_What_is_the_Process_that_State_follows_and_notification
+  - cutoff_date_Are_there_any_cut_off_dates_to_enroll
+  - data_entry_Are_there_any_cut_off_dates_to_enter_data_in_the_portal
+  - yeild_data_When_do_the_States_provide_the_yield_data_to_Insurance_Companies
+  - settle_claims_By_when_will_Insurance_Company_settle_the_claims_after_receiving_the_d
+  - process_to_inform_What_is_the_process_to_inform_the_company_about_crop_sown_and_changes
+  - commisions_What_are_the_Commission_and_Bank_charges_payable_to_bankers_and_interm
+  - service_tax_Is_service_tax_applicable_under_this_scheme
+  - transfer_Whether_transfer_of_ownership_occurred_between_01.12.2018_and_31.01.20
+  - income_tax_payee_._ls_an_income_tax_payee_farmer_or_his_or_her_spouse_eligible_to_get_b
+  - def_of_family_What_is_the_definition_of_'family'_under_the_Scheme_of_pradhan_mantri_
+  - PMKSN_criteria_ls_any_person_or_farmer_who_is_cultivating_a_land_but_is_not_having_th
+  - beneficiaries_How_the_beneficiaries_under_the_pm_kisan_sanman_nidhi_will_be_identifi
+  - information_for_PMKSN_What_is_the_mandatory_information_required_to_be_submitted_on_PM-KISAN
+  - registration_confirmation_._How_does_a_landholder_farmers'family_know_that_his_or_her_name_is_in
+  - remedy_available_What_is_the_remedy_available_for_eligible_beneficiary_if_hisorher_name
+  - financial_benifit_lf_there_are_multiple_farmers'_families_whose_names_are_recorded_on_a_
+  - monetary_benifit_Will_be_monetary_benefit_under_the_Scheme_of_pm_kisan_sanman_nidhi_be_
+  - account_details_Whether_it_is_compulsory_for_beneficiaries_to_give_their_bank_account
+  - aadhar_details_._Whether_giving_Aadhaar_details_is_mandatory_for_availing_benefit_und
+  - urban_area_farmers_Whether_farmers_in_villages_situated_in_urban_areas_are_eligible_for_t
+  - micro_land_Whether_micro_land_holdings_are_admissible_for_availing_the_benefit_of
+  - prescribed_mechanism_What_is_the_prescribed_mechanism_for_validation_of_information_or_decl
+  - cutoff_date_What_is_the_cut-off_date_for_'minor'_children_becoming_'major'_under_t
+  - non_agricultural_purpose_._Whether_farmers_may_avail_the_benefit_of_the_Scheme_against_agricult
+  - installments_What_is_the_procedure_of_release_of_installments_to_the_beneficiaries
+  - installments_criteria_If_a_farmer_registered_under_the_Scheme_does_not_receive_any_installme
+  - mandatory_information_What_is_the_mandatory_information_required_to_be_submitted_on_PM-KISAN
+  - incorrect_declaration_What_will_happen_if_the_beneficiary_gives_incorrect_declaration_for_pm
+  - credit_card_scheme_What_is_kisan_credit_card_scheme
+  - use_Can_I_use_my_Kisan_Credit_Card_to_withdraw_cash_from_the_ATM
+  - credit_limit_How_is_the_credit_limit_decided_for_Kisan_Credit_Card
+  - number_of_withdrawals_How_many_withdrawals_can_I_make_using_the_Kisan_Credit_Card
+  - POS_Can_I_use_the_Kisan_Credit_Card_at_merchant_Point_of_Sale_(POS)_termin
+  - insurance_premium_What_is_the_insurance_premium_for_personal_accident_insurance_scheme_a
+  - validity_period_What_is_the_validity_period_for_Kisan_Credit_Card
+  - online_application_Can_I_apply_for_the_Kisan_Credit_Card_online_from_my_bank
+  - insurance_cover_What_type_of_insurance_cover_do_the_Kisan_Credit_Card_(KCC)_Holders_ge
+  - ratio_In_what_ratio_the_premium_of_Personal_Accident_Insurance_is_borne_by_t
+  - type_of_card_What_type_of_credit_is_provided_to_the_Kisan_Credit_Card_(KCC)_Holder
+  - NAIS_What_is_NAIS?
+  - PAIS_What_is_PAIS?
+  - marginal_farmer_Who_is_a_Marginal_Farmer
+  - minimum_credit_What_is_the_Minimum_credit_limit_under_Kisan_Credit_Card_(KCC)
+  - eligibility_Eligibility_for_kisan_credit_card
+  - application_How_do_I_apply_for_a_Kisan_Credit_Card
+  - benifits_What_are_the_benefits_of_the_Kisan_Credit_Card_Scheme
+  - credits_gained_How_much_credit_can_I_get_through_the_Kisan_Credit_Card_Scheme
+  - interest_rate_What_is_the_interest_rate_on_Kisan_Credit_Card_loans
+  - non_agricultural_purpose_Can_I_use_the_Kisan_Credit_Card_for_non-agricultural_purposes
+  - processing_fee_Is_there_any_processing_fee_for_the_Kisan_Credit_Card_Scheme
+  - repayment_period_What_is_the_repayment_period_for_Kisan_Credit_Card_loans
+  - failed_to_repay_What_happens_if_I_fail_to_repay_my_Kisan_Credit_Card_loan
+  - PMKMNDY_What_is_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_(PM-KMY)
+  - benifits_PMKMNDY_What_are_the_benefits_of_the_scheme
+  - eligibiliy_Who_is_eligible_to_get_the_benefits_of_the_scheme
+  - incorrect_data_What_will_happen_if_the_beneficiary_gives_incorrect_declaration_to_be_
+  - information_for_PMKMNDY_What_kind_of_information_needs_to_be_provided_by_the_beneficiary_at_th
+  - Pension_fund_manager_Who_will_act_as_Pension_Fund_Manager_for_the_Scheme
+  - contribution_Can_contribution_to_the_scheme_be_made_from_the_benefits_received_from
+  - Pension_fund_What_would_constitute_a_Pension_Fund
+  - SMF_Are_StateorUT_Governments_permitted_to_share_the_burden_of_individual_
+  - due_date_What_will_be_the_due_date_for_monthly_contributions
+  - CSC_When_would_CSC_issue_a_Pension_Card_to_the_subscriber
+  - Spouses_Will_the_applicant_farmers_or_their_spouses_be_charged_any_fee_for_enr
+  - apply_PMKMNDY_How_do_I_apply_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana
+  - contri_amount_What_is_the_contribution_amount_for_the_Pradhan_Mantri_Kisan_Maan-Dhan
+  - benifits_Can_I_avail_of_the_benefits_of_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yoja
+  - refundable_Is_the_enrollment_fee_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_re
+  - min_max_What_is_the_minimum_and_maximum_age_limit_to_enroll_in_the_Pradhan_Man
+  - availibility_Is_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_available_in_all_states_i
+  - nomination_Can_I_nominate_someone_to_receive_the_benefits_of_the_Pradhan_Mantri_K
+  - change_of_nominie_Can_I_change_my_nominee_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana
+  - penalty_Is_there_any_penalty_for_late_payment_of_the_contribution_amount_for_t
+  - exit_criteria_Can_I_exit_from_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_before_the_a
+  - cultivable_land_Is_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_available_for_farmers_who
+  - cross_benifits_Can_I_avail_of_the_benefits_of_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yoja
+  - pension_amount_How_will_the_pension_amount_be_disbursed_under_the_Pradhan_Mantri_Kisa
+  - age_relaxation_Is_there_any_age_relaxation_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yoj
+  - provision_for_PMKMNDY_Is_there_any_provision_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_f
+  - change_in_amount_Can_I_change_my_contribution_amount_for_the_Pradhan_Mantri_Kisan_Maan-
+  - PMKSY_What_is_Pradhan_Mantri_Krishi_Sinchayee_Yojana_(PMKSY)_approved_by_NDA
+  - PMKSY_What_are_the_major_objectives_of_PMKSY
+  - programmes_What_are_the_programmes_for_achieving_the_objectives
+  - role_of_MP_What_will_be_role_of_Member_of_Parliament_(MP)orMember_of_Legislative_
+  - micro_irrigation_What_is_the_pattern_of_assistance_under_micro_irrigation_scheme_of_PMK
+  - subsidy_release_What_is_the_method_of_subsidy_release_to_the_beneficiary
+  - funds_Funds_are_being_provided_to_three_ministries_and_what_will_be_the_syst
+  - GST_rate_What_is_the_GST_rate_applicable_for_Micro_Irrigation_Systems?
+  - facilities_What_are_the_facilities_provided_under_PMKSY-Per_Drop_More_Crop
+  - benifits_PMKSY_How_to_get_benefit_of_scheme
+  - PMKSY_What_is_the_objective_of_Pradhan_Mantri_Kisan_Sampada_Yojana
+  - components_What_are_the_components_of_Pradhan_Mantri_Kisan_Sampada_Yojana
+  - eligibility_Who_is_eligible_to_apply_for_Pradhan_Mantri_Kisan_Sampada_Yojana
+  - application_How_can_I_apply_for_Pradhan_Mantri_Kisan_Sampada_Yojana
+  - assistance_provided_What_is_the_financial_assistance_provided_under_Pradhan_Mantri_Kisan_S
+  - duration_What_is_the_duration_of_the_implementation_of_the_project_under_Pradha
+  - progress_How_is_the_progress_of_the_project_monitored_under_Pradhan_Mantri_Kisa
+  - changing_location_Can_the_beneficiary_change_the_location_of_the_project_under_Pradhan_M
+  - role_of_MOFPI_What_is_the_role_of_the_Ministry_of_Food_Processing_Industries_in_Prad
+  - UPIS_What_is_Unified_Package_Insurance_Scheme?
+  - Coverage_What_is_covered_under_the_Unified_Package_Insurance_Scheme?
+  - eligibility_Who_is_eligible_for_the_Unified_Package_Insurance_Scheme?
+  - how_to_enroll_How_do_families_enroll_in_the_Unified_Package_Insurance_Scheme?
+  - cost_for_enrollment_Is_there_a_cost_for_enrollment_in_the_Unified_Package_Insurance_Scheme
+  - max_coverage_What_is_the_maximum_coverage_provided_under_the_Unified_Package_Insura
+  - claim_How_can_families_make_a_claim_under_the_Unified_Package_Insurance_Sche
+  - medical_conditions_Are_pre-existing_medical_conditions_covered_under_the_Unified_Package_
+  - Krishi_Udan_What_is_Krishi_UDAN
+  - eligibility_Who_is_eligible_for_Krishi_UDAN
+  - working_How_does_Krishi_UDAN_work
+  - benifits_What_is_the_benefit_of_Krishi_UDAN_to_farmers
+  - farmers_participation_How_can_farmers_participate_in_Krishi_UDAN
+  - airlines_Which_airlines_participate_in_Krishi_UDAN
+  - types_What_are_the_types_of_agricultural_produce_that_can_be_transported_und
+  - subsidy_provided_What_is_the_subsidy_provided_under_Krishi_UDAN
+  - impact_How_has_Krishi_UDAN_impacted_the_agriculture_sector_in_India
+
+
+
+  
+
+
+
+
+
+responses:
+ utter_crop_insurance_What_is_Crop_Insurance:
+  - text: "Crop insurance is a means of protecting the agriculturist against financial losses due to uncertainties that may arise from crop failures/losses arising from named or all unforeseen perils beyond their control."
+
+ utter_objective_Objective_of_PMFBY:
+  - text: "Pradhan Mantri Fasal Bima Yojana (PMFBY) aims at supporting sustainable production in agriculture sector by way of - a) providing financial support to farmers suffering crop loss/damage arising out of unforeseen events b) stabilizing the income of farmers to ensure their continuance in farming c) encouraging farmers to adopt innovative and modern agricultural practices d) ensuring flow of credit to the agriculture sector; which will contribute to food security, crop diversification and enhancing growth and competitiveness of agriculture sector besides protecting farmers from production risks."
+
+ utter_crop_insurance_What_is_Weather_based_Crop_Insurance:
+  - text: "Weather Based Crop Insurance aims to mitigate the hardship of the insured farmers against the likelihood of financial loss on account of anticipated crop loss resulting from incidence of adverse conditions of weather parameters like rainfall, temperature, frost, humidity etc."
+
+ utter_crop_insurance_How_many_Coverage_of_Crops:
+  - text: "1. Food crops (Cereals, Millets and Pulses), 2) Oilseeds, 3) Annual Commercial / Annual Horticultural crops"
+
+ utter_coverage_limit_What_are_Sum_Insured_/Coverage_Limit:
+  - text: "1. Sum Insured per hectare for both loanee and non-loanee farmers will be same and equal to the Scale of Finance as decided by the District Level Technical Committee, and would be pre-declared by SLCCCI and notified. No other calculation of Scale of Finance will be applicable. Sum Insured for individual farmer is equal to the Scale of Finance per hectare multiplied by area of the notified crop proposed by the farmer for insurance. ‘Area under cultivation’ shall always be expressed in ‘hectare’. 2. Sum insured for irrigated and un-irrigated areas may be separate"
+
+ utter_date_Last_date_for_Crop_Insurance_Kharif_Season:
+  - text: "10-Aug-16"
+
+ utter_crop_insurance_How_many_companies_providing_Crop_Insurance:
+  - text: "Agriculture Insurance Company,Cholamandalam MS General Insurance Company,Reliance General Insurance Co. Ltd,Bajaj Allianz,Future Generali,India Insurance Co. Ltd.,HDFC ERGO General Insurance Co. Ltd.,IFFCO Tokio General Insurance Co. Ltd.,Universal Sompo General,Insurance Company,ICICI Lombard General Insurance Co. Ltd.,Tata AIG General Insurance Co. Ltd.,SBI General Insurance,United India Insurance Co."
+
+ utter_risks_What_types_of_Risks_to_be_covered_&_exclusions?:
+  - text: "1. RISKS: Following risks leading to crop loss are to be covered under the scheme:- 1.1. YIELD LOSSES (standing crops, on notified area basis): Comprehensive risk insurance is provided to cover yield losses due to non-preventable risks, such as (i) Natural Fire and Lightning (ii) Storm, Hailstorm, Cyclone, Typhoon, Tempest, Hurricane, Tornado etc. (iii) Flood, Inundation and Landslide (iv) Drought, Dry spells (v) Pests/ Diseases etc. 5 8.1.2. PREVENTED SOWING (on notified area basis):- In cases where majority of the insured farmers of a notified area, having intent to sow/plant and incurred expenditure for the purpose, are prevented from sowing/planting the insured crop due to adverse weather conditions, shall be eligible for indemnity claims upto a maximum of 25% of the sum-insured 1.3. POST-HARVEST LOSSES (individual farm basis): Coverage is available upto a maximum period of 14 days from harvesting for those crops which are kept in “cut & spread” condition to dry in the field after harvesting, against specific perils of cyclone / cyclonic rains, unseasonal rains throughout the country. 1.4. LOCALISED CALAMITIES (individual farm basis): Loss / damage resulting from occurrence of identified localized risks i.e. hailstorm, landslide, and Inundation affecting isolated farms in the notified area. 2. EXCLUSIONS: Risks and Losses arising out of following perils shall be excluded:- War & kindred perils, nuclear risks, riots, malicious damage, theft, act of enmity, grazed and/or destroyed by domestic and/or wild animals, In case of Post–Harvest losses the harvested crop bundled and heaped at a place before threshing, other preventable risks."
+
+ utter_claim_settlement_PROCEDURE_FOR_SETTLEMENT_OF_CLAIMS:
+  - text: "For coverage through Banks:-The claim amount along with particulars will be released to the individual Nodal Banks. The Banks at the grass-root level, in turn, shall credit the accounts of the individual farmers and display the particulars of beneficiaries on their notice board. The Banks shall provide individual farmer wise details claim credit details to IA and shall be incorporated in the centralised data repository."
+
+ utter_PMFBY_What_is_Pradhan_Mantri_Fasal_Bima_Yojana:
+  - text: "Pradhan Mantri Fasal Bima Yojana provides protection to farmers for the losses occurring due to uncertainty and unfavorable weather vagaries resulting in crop losses on field."
+
+ utter_reasons_What_are_the_reasons_due_to_which_crop_gets_affected_and_risks_covered:
+  - text: "Natural disaster, pest attacks and weather vagaries such excess or deficit rainfall , excess or deficit temperature , humidity , frost , windspeed etc."
+
+ utter_claim_assesment_How_is_the_assessment_of_claim_done:
+  - text: "a. If the Actual yield per hectare of insured crops for the insurance unit (calculated on the basis of
+          requisite no. of CCEs) in insured season falls short of specified Threshold yield, all insured farmer
+          in that defined area and crop are deemed to have suffered shortfall in yield.
+
+          re , i
+
+      (Threshold Yield - Actual Yield)
+      ———— * Sum insured
+      Threshold Yield
+
+      ‘Where,
+
+      Threshold yield is the average yield of past seven years (excluding a maximum of two calamity
+      year(s) as notified by State Government/ UT) multiplied by applicable indemnity level for that crop.
+
+      b. Settlement of claim to the farmers would commence once premium subsidy from Central and State/
+      UT Govt. have been received for the season by insurance company.
+
+      c. After receiving the claim amount from concemed insurance companies, the financial institution/
+      banks should remit the claim amount to beneficiaries farmer account within 1 week and should
+      display the complete details of beneficiaries at branch offices within 7 days and send the report to
+      insurance companies along with utilization certificate for verification and audit.
+
+      4. Incase of farmers covered through voluntary basis i.e. Intermediaries, payable claim will be directly
+      credited into individual farmer accounts with an intimation of claim details by insurance company."
+
+ utter_Premium_rates_What_are_the_Premium_Rates_charged_under_this_scheme:
+  - text: "Actuarial premium rates to be charged under PMFBY scheme are as follow:- a. For Kharif Crops, the maximum premium rates payable by the farmers is 2 % of Sum Insured or 
+        Actuarial premium rate whichever is less. b. For Rabi Crops, the maximum premium rates payable by the farmers is 1.5 % of Sum Insured or
+        Actuarial premium rate whichever is less.c. For Kharif and Rabi Crops, the maximum premium rates payable by the farmers is 5 % of Sum
+        Insured or Actuarial premium rate whichever is less."
+
+ utter_sowing_claim_How_is_prevented_sowing_claim_applicable_for_farmers:
+  - text: "Prevented Sowing/ Planting Risk: In case of majority of insured crops of a notified area are
+      prevented from sowing/planting due to adverse weather conditions such as deficit rainfall or
+      adverse seasonal conditions, the insured crops that will be eligible for indemnity claims upto
+      maximum of 25% of the sum-insured. Coverage is applicable to farmers in case of widespread incidence of eligible risks
+      affecting crops in more than 75% of area sown in a notified unit at early stage leading to
+      total loss of crop or farmer is not in a position to either sow or transplant the crop (or )
+      either sowing or germination of crop due to deficit or excess rain fall. Eligibility Criteria: Only those farmers who have paid the premium / the premium has been debited from
+      their account before the damage. The State Government would provide Notified Insurance
+      Unit and crop wise normal area sown at the beginning of the season within 15 days.
+      “Prevented Sowing/ Planting” pay-out only if more than 75% of Crop Sown Area for
+      notified crop remained unsown due to occurrence of any of the above perils. Loss assessment procedure:= The cover will be available for major crops only.= The payout will be 25% of total sum insured and the policy will be terminated after that. Note: The Insurance company will disburse claims within 30 days of State Govt
+      notification / order, subject to receipt of premium ,as per scheme guidelines."
+
+ utter_PMKSN_What_is_Pradhan_Mantri_Kisan_Samman_Nidhi:
+  - text: "Pradhan Mantri Kisan Samman Nidhi (PIV-KISAN) is a new Central Sector Scheme to provide income support to all landholding farmers' families in the country to supplement their financial needs for procuring various inputs related to agriculture and allied activities as well as domestic needs. Under the Scheme, the entire financial liability towards transfer of benefit to targeted beneficiaries will be borne by Government of Ind ia."
+
+ utter_SMF_Whether_the_benefits_of_the_scheme_are_admissible_to_only_Small_&_Marg:
+  - text: "No. ln the beginning when the PtV-Kisan Scheme was launched on 24i\ February, 
+        2019, its benefits were admissible only to Small & I/larginal Farmers' (SI4F) families, 
+        with combined landholding upto 2 hectare. The Scheme was later on revised w.e.f. 
+        1 .6.2019 and extended to all farmer families irrespective of the srze of their 
+        landholdings"
+
+ utter_Benifits_PMKSN_What_are_the_benefits_of_pm_kisan_sanman_nidhi_Scheme:
+  - text: "Under the PM-KISAN scheme, all landholding farmers' famities shall be provided the 
+        financial benefit of Rs.60001 per annum per family payable in three equal installments 
+        of Rs.20001 each, every four months."
+
+ utter_launch_date_When_was_the_scheme_launched:
+  - text: "The PM-Kisan Scheme was launched by the Hon'ble Prime Minister on 24th February, 
+          2019"
+
+ utter_start_date_From_which_date_the_Scheme_has_come_into_effect:
+  - text: "The scheme takes effect from 01 .12.2018"
+
+ utter_eligible_people_Who_are_eligible_to_get_benefits_under_pm_kisan_sanman_nidhi:
+  - text: "All landholding farmers' families, which have cultivable landholding in their names are 
+      eligible to get benefit under the scheme"
+
+ utter_not_eligible_Who_are_not_eligible_to_get_benefits_under_the_Scheme_of_pm_kisan_sanm:
+  - text: "The followin category of farmers are not eligible to get the benefits of the PM-Kisan:Scheme 
+        (a) All lnstitutional Land holders; and 
+      (b) Farmer families in which one or more of its members belong to following 
+      categories:- 
+      i. Former and present holders of constitutional posts 
+      ii. Former and present ltlinisters State Ministers and former present 
+      Members of Lok sabha Rajya sabha state Legislative Assemblies State 
+      Legislative councils, former and present tt ayors of Municipal corporations, 
+      former and present Chairpersons of District Panchayats. 
+      iii. All serving or retired officers and employees of Central State 
+      Government tvliniitries Offices Departments and its field units Central or State 
+      PSEs and Attached offices Autonomous lnstitutions under Government as 
+      well as regular employees of the Local Bodies (Excluding Multi Tasking staff 
+      Class lV Group D employees)"
+
+ utter_benifit_details_How_many_times_the_benefit_will_be_given_in_a_year:
+  - text: "Under the Plv-KlsAN scheme, all landholding farmers' families shall be provided the 
+        financial benefit of Rs.6000 - per annum per family payable in three equal installments 
+        of Rs.200O - each, every four months. The period of 1't installment under the scheme 
+        is from 01 .12 2O18 to 31 03 2019, that of 2nd installment from 01 04.2019 to 
+        31 07 .2019,3'd installment from 01 08.2019 to 30 11 2019, and so on"
+
+ utter_benifit_criteria_Whether_an_employee_of_the_CentralorState_Government_or_PSU_or_Autonom:
+  - text: "No. All serving or retired officers and employees of central state Government 
+      lVlinistries Offices Departments and their field units, Central or State PSEs and 
+      Attached offices Autonomous lnstitutions under Government as well as regular 
+      employees of the Local Bodies are not eligible to get benefit under the scheme"
+
+ utter_two_hectare_Will_any_individual_or_farmer_family_owning_more_than_2_hectare_of_cul:
+  - text: "Yes. The ambit of the scheme has been extended to cover all farmer families, 
+      irrespective of the size of their land holdings."
+
+ utter_law_._What_will_happen_if_the_beneficiary_gives_incorrect_declaration_for_:
+  - text: "ln case of incorrect declaration, the beneficiary shall be liable for recovery of 
+      transferred financjal benefit and other penal actions as per law."
+
+ utter_cutoff_date_What_is_the_cutoff_date_for_determination_of_eligibility_of_beneficiar:
+  - text: "The cut-off date for determination of eligibility of beneficiaries under the scheme is 
+      01 .02.2019 and no changes thereafter shall be considered for eligibility of benefit 
+      under the scheme for next 5 years, except transfer of land on succession in case of 
+      death of landholder."
+
+ utter_death_of_landowner_Whether_the_scheme_benefits_will_be_allowed_in_cases_where_transfer_of:
+  - text: "Yes. The Scheme benefits will be allowed in all such cases where transfer of 
+        ownership of cultivable land has taken place after the cut-off date of 01.02.20'19 on 
+        account of succession due to death of the landowner."
+
+ utter_coverage_limit_What_is_the_coverage_provided_during_standing_crop_stage_for_farmers:
+  - text: "Standing Crop (Sowing to Harvesting): Comprehensive risk insurance is provided to cover yield
+        losses due to non- preventable risks, viz. Drought, Dry spells, Flood, Inundation, Pests and Diseases,
+        Landslides, Natural Fire and Lightening, Storm, Hailstorm, Cyclone, Typhoon, Tempest, Hurricane and
+        Tornado during the standing crop stage.
+
+      I. On account payment of claims due to mid season adversity of claims is applicable for
+      standing crops in case of floods, prolonged dry spells, severe drought etc , where
+      expected yield will be less than 50%.
+
+      II. Eligibility Criteria for farmers who have paid the premium or whose premium has
+      been debited from their account before the damage.
+
+      Note: If adversity occurs within 15 days before the normal harvest time, this provision will not be
+      invoked. The provision is invoked by the State Government through damage notification based on
+      the proxy Indicators.
+
+      IIl. Loss assessment procedure:
+
+      Joint Loss Assessment so conducted with government and if applicable the On-account
+      payment would be calculated as per following formula:
+      (Threshold Yield - Estimated Yield) x Sum Insured x 25%
+      Threshold Yield
+      
+      IV. Time frame for loss assessment and submission of report
+
+      Eligibility on account Loss Details will provided by government with in 7 days after the damage.
+      Loss assessment will be completed with in 15 days after the damage.
+
+      The On-account payment would be disbursed by the insurance company, subject to receipt of
+      premium ,as per scheme guidelines
+
+      For claims related queries customer can call our call center 1800 266 0700 or write a mail to
+      care@hdfcergo.com"
+
+ utter_loss_covered_If_the_crop_is_harvested_is_loss_covered_after_that_also_and_to_what_e:
+  - text: "Post-Harvest Losses: coverage is available only up to a maximum period of two weeks from
+      harvesting for those crops which are allowed to dry in cut and spread condition in the field after
+      harvesting against specific perils of cyclone and cyclonic rains and unseasonal rains.
+
+      Ve
+
+      Vi.
+
+      Vil.
+
+      The damage to the harvested crop after “cut and spread” in field due to cyclone, cyclonic
+      rains and unseasonal rains throughout the country resulting in damage to harvested crop
+      Maximum period is two weeks (14 days) from harvested date to drying purpose
+
+      Eligibility criteria: Only those farmers who have paid the premium the premium has
+      been debited from their account before the damage
+      Damaged by specified perils, up to 14 days after the harvesting is done.
+
+      Loss assessment procedure:
+
+      Farmer needs to provide Intimation with in 72 hrs after the damage should be provided on
+      our call center number 1800 266 0700 and Intimation must contain details of survey
+      number-wise insured crop and acreage affected
+
+      Farmer should also subsequently provide the filled Claim form along with all relevant
+      documents as requisite for payment of claims
+
+      The Loss assessor will be appointed and assessment will be completed within stipulated
+      timelines post which the claims will be settled after the loss assessment report is
+      finalized, subject to receipt of premium ,as per scheme guidelines.
+
+      For claims related queries customer can call our call center 1800 266 0700 or write a mail
+      to care@hdfcergo.com"
+
+ utter_crops_covered_Which_crop_can_be_covered_under_Pradhan_Mantri_Fasal_Bima_Yojana_schem:
+  - text: "a. Food Crops e.g cereals , millets and pulses
+        b. Oilseeds e.g groundnut
+        c. Annual Commercial Annual Horticulture Crops e.g fruits and vegetables"
+
+ utter_NPSR_What_would_be_the_Normal_Premium_subsidy_ratio:
+  - text: "Difference between actuarial premium rate and farmer payable premium rate shall be treated as
+      Normal premium subsidy rate, which shall be shared equally by Central and State Govt.
+
+      Some States do provide additional subsidy over and above the stipulated subsidy from its budget
+      as per their norms and farmers can check the status on Govt website on the same."
+
+ utter_extent_of_coverage_What_is_the_extent_of_coverage_available_for_the_crops:
+  - text: "Coverage is not provided for 100% of the crop value. The Sum Insured is basis the cost of input of
+        cultivation of crop. Then basis the riskiness of the crop the level of indemnity is fixed at district and
+        crop level in different levels such as - 70% corresponding to High Risk, 80% to Moderate Risk
+        and 90% to Low Risk. State level crop coordination committee in the state approves the
+        respective scale of finance and Indemnity level for notified crop and area prior to tender process in
+        the States. Hence the coverage for the farmer is basis the final amount declared by the State level
+        crop coordination committee."
+
+ utter_timelines_of_PMFBY_Is_there_any_timelines_for_enrollment_for_PMFBY:
+  - text: "All enrolments need to necessarily be completed within the cutoff date as defined in the respective
+      State Government notification and farmer share of premium duly remitted by the Bank or Intermediary
+
+        within the cut off date to the Insurance Company. Incase of any delays beyond the cut off dates the
+        Insurance company has the right to reject coverage"
+
+ utter_Sum_insured_What_is_Sum_Insured_Limit_for_individual_farmer:
+  - text: "Sum Insured for individual farmer is equal to scale of finance per hectare multiplied by area of notified crop
+      by the farmers for insurance. The Sum Insured for different crops in States allocated to HDFC Ergo for
+      Kharif 2018 can be viewed on the respective States section."
+
+ utter_settlement_claims_What_is_the_basis_of_settlement_of_claims_for_farmer:
+  - text: "The Threshold Yield (TY) shall be the benchmark yield level at which Insurance protection shall be given to
+        all the insured farmers in an Insurance Unit . The threshold of the notified crop will be moving average of
+        yield of last seven years excluding yield upto two notified calamity years multiplied by Indemnity level. The
+        final claims payable will be basis the actual shortfall in yield from the threshold yield."
+
+ utter_preconditions_What_are_the_Preconditions_for_the_State_for_implementation_of_this_sc:
+  - text: "State UT should conduct requisite number of Crop Cutting Experiments (CCEs) at notified 
+          insurance unit area on a sliding scale basis. 
+
+          State UT to submit CCE based yield data to insurance companies within the prescribed time limits 
+          i.e. within one month from the date of final harvest. 
+
+          State UT should facilitate strengthening of automatic weather station network for the purpose of on 
+          account payment settlement. 
+
+          State UT to adopt modern technology for conduct of CCEs."
+
+ utter_process_What_is_the_Process_that_State_follows_and_notification:
+  - text: "Post issuance of administrative instruction from Govt. Of India for implementation of
+      PMFBY scheme. SLCCCI normally conducts the meeting to finalize various terms and
+      conditions on Notification of crops, Notified area, Scale of finance, Indemnity level etc.,
+      along with issuance of bid notice.
+
+      SLCCCI generally issues notification and its circulation to all concern implementing
+      agencies of their respective states at least one month in advance of the commencement
+      of crop seasons i.e. For Kharif is March and Rabi is September.
+
+      Uploading of all requisite information of notification on the Crop Insurance portal
+      (www.agri-insurance.gov.in) in co-ordination with State Govt. and selected implementing
+      agency should be made available within one week from issuance of notification."
+
+ utter_cutoff_date_Are_there_any_cut_off_dates_to_enroll:
+  - text: "As per the PMFBY guidelines and cut off dates vary for different intermediaries and Banks
+        the overall loaning period for covering of loanee farmers under compulsory components
+        would be, for Kharif — April to July and Rabi — October to December.
+
+        a. Bankers to collect premium from Farmers - Cut-off dates for receipt of proposal form 
+        debit of premium from farmers account for both Loanee and Non loanee farmers would
+        be, for Kharif — 31° July and Rabi — 31** December
+
+        b. Bankers to submit to Insurance company - Cut-off dates for receipt of consolidated
+        declaration proposal from Nodal bank Bank branches would be within 15 days for
+        Loanee farmers and 7 days for Non loanee farmers from cut-off date of debit of premium
+        from farmers account for Kharif and Rabi season respectively.
+
+        c. Insurance intermediaries to submit to Insurance company - Cut-off dates for receipt
+        of Proposal from designated Insurance Agent's would be within 7 days of receipt of
+        declaration premium respectively.
+
+        It may be noted that neither DAC & FW nor any State UT Government will be authorized to
+        extend the cut-off dates of seasonality under any circumstance once it is fixed and notified."
+
+ utter_data_entry_Are_there_any_cut_off_dates_to_enter_data_in_the_portal:
+  - text: "a. Bankers and intermediaries — All enrolments done through any banker or intermediary
+      the cut-off dates for uploading of soft copy of individual insured farmers data in crop
+      insurance portal would be, within 15 days after cut-off date of collection of premium."
+
+ utter_yeild_data_When_do_the_States_provide_the_yield_data_to_Insurance_Companies:
+  - text: "For State Govt. UT, Cut-off dates need to finalize all the yield data post crop cutting and
+      provide all the Yield data to Insurance Companies within one month from the date of final
+      harvest."
+ utter_settle_claims_By_when_will_Insurance_Company_settle_the_claims_after_receiving_the_d:
+  - text: "Insurance companies should make payment of final claims based on yield data , within three
+      weeks from the receipt of yield data from the State Govt."
+
+ utter_process_to_inform_What_is_the_process_to_inform_the_company_about_crop_sown_and_changes:
+  - text: "Incase the farmer changes the crop to be sown, he should intimate the change to insurance company, at least 30 days before cut-off-date for buying insurance or sowing either throughfinancial institution channel partner insurance intermediary directly; as the case may be,
+      along with difference in premium payable, if any, accompanied by sowing certificate issued by
+      concerned village sub-district level official of the State. In case the premium paid was higher,
+      insurance company will refund the excess.."
+
+ utter_commisions_What_are_the_Commission_and_Bank_charges_payable_to_bankers_and_interm:
+  - text: "Bank and other financial institutions etc. shall be paid service charges @ 4% of the
+      premium collected from farmers. Rural agents engaged in providing insurance related
+      services to farmers may be paid appropriate commission as decided by the insurance
+      company, subject to cap prescribed under IRDA regulations."
+
+ utter_service_tax_Is_service_tax_applicable_under_this_scheme:
+  - text: "PMFBY is exempted from Service Tax."
+
+ utter_transfer_Whether_transfer_of_ownership_occurred_between_01.12.2018_and_31.01.20:
+  - text: "ln cases where transfer of ownership of cultivabie land has happened between 
+      01 .12.2018 and 31.01 .2019 due to any reasons such as purchase, successlon, will, 
+      gift, etc., the first installment during the financial year (2018-19) shall be of 
+      proportionate amount from date of transfer till 31 .03.2019 with respect to the 4 months 
+      period, provided the families are otherwise eligible as per scheme guidelines."
+
+ utter_income_tax_payee_._ls_an_income_tax_payee_farmer_or_his_or_her_spouse_eligible_to_get_b:
+  - text: "No. if any member of the family is income tax payee in last assessment year, then the 
+      family is not eligible for benefit under the scheme"
+
+ utter_def_of_family_What_is_the_definition_of_'family'_under_the_Scheme_of_pradhan_mantri_:
+  - text: "A landholder farmer's family is defined as a family comprising of husband, wife 
+      minor children who own cultivable land as per the land records of the concerned 
+      State UT. The existing land-ownership system will be used for identification of 
+      beneficiaries for calculation of benefit."
+
+ utter_PMKSN_criteria_ls_any_person_or_farmer_who_is_cultivating_a_land_but_is_not_having_th:
+  - text: "No. Land holding is the sole criteria to avail the benefit under the Scheme"
+
+ utter_beneficiaries_How_the_beneficiaries_under_the_pm_kisan_sanman_nidhi_will_be_identifi:
+  - text: "The responsibility of identifying the eligible farmers' families for benefit under the 
+scheme is entirely of the State UT Governments. The prevailing land-ownership 
+system record of land in different States Union Territories will be used to identify the 
+intended beneficiaries for transfer of scheme benefits."
+
+ utter_information_for_PMKSN_What_is_the_mandatory_information_required_to_be_submitted_on_PM-KISAN:
+  - text: "The following informatron documents are requlred to be furnished by the farmers for 
+enrollment under PI\ -Kisan Scheme 
+(i) Name, Age, Gender and Category (SC ST) 
+(ii) Aadhaar Number [except in case of farmers in the States of Assam, lr eghalaya 
+and J&K (now UTs of J&K and Laddakh), where Aadhaar number has not 
+been issued to most of the citizens, and therefore these States have been 
+exempted from the requirement till 31't N arch, 2020. ln these States UTs, 
+Aadhaar number shall be collected for those beneficiaries where it is available 
+and for others alternate prescribed documents can be collected for identity 
+verification purposes by the States UT Governments, like Aadhaar Enrollment"
+
+ utter_registration_confirmation_._How_does_a_landholder_farmers'family_know_that_his_or_her_name_is_in:
+  - text: "The beneficiary lists would be displayed at Panchayats to ensure greater transparency 
+and information. Further, States UTs would notify the sanction of benefit to the 
+beneficiary through system generated SlVlS. He she can also ascertain his status 
+through the Farmers Corner in the PIV-Kisan portal."
+
+ utter_remedy_available_What_is_the_remedy_available_for_eligible_beneficiary_if_hisorher_name:
+  - text: "All such farmer families whose names are not included in the list of beneficiaries can approach the District Level Grievance Redressal Monitoring Committee in their Districts for inclusion of their names in the beneficiary list. Further, the Government has created an exclusive Farmers' Corner in the PM-KISAN web-portal www.pmkisan.gov.in giving the following facilities to the farmers through three separate options links:- New Farmer's Registration - Through this link, the farmers can submit their details online. The online Form has certain mandatory fields as well self-declaration regarding the eligibility. Once the Form is filled in and submitted successfully by the farmer, the same is forwarded by an automated process to the State Nodal Officer (SNO) for verification. The SNO verifies the details filled in by the farmer and uploads the verified data on the PM-KISAN portal. Thereafter the data is processed through an established system for payment. Edit Aadhaar details - Through this link the farmer can edit his her name himself herself as per details in the Aadhaar Card. The edited name then gets updated after authentication through the system. (ii) (iii) Beneficiary Status - Through this link, by quoting their Aadhaar Number or Bank Account Number or the registered Mobile Number, the beneficiaries can themselves ascertain the status of payment of their installments."
+
+ utter_financial_benifit_lf_there_are_multiple_farmers'_families_whose_names_are_recorded_on_a_:
+  - text: "Each of such farmer family would be separately eligible for the benefit under the 
+scheme upto the extent of Rs. 60001 provided they are otherwise eligible as per 
+scheme guidelines."
+
+ utter_monetary_benifit_Will_be_monetary_benefit_under_the_Scheme_of_pm_kisan_sanman_nidhi_be_:
+  - text: "Yes. The financial benefit under the scheme shall be directly credited into bank 
+accounts of beneficiaries."
+
+ utter_account_details_Whether_it_is_compulsory_for_beneficiaries_to_give_their_bank_account:
+  - text: "Yes, the beneficiaries are required to provide their bank account details along with 
+their Aadhaar number so as to credit the financial benefit under the scheme directly 
+into their bank accounts. No benefit can be given if bank account details have not 
+been provided."
+
+ utter_aadhar_details_._Whether_giving_Aadhaar_details_is_mandatory_for_availing_benefit_und:
+  - text: "Aadhaar number was optional and not mandatory for release of 1st installment 
+pertaining to the period 01 .12.2018 to 31.03.2019, whereas only possession of Aadhaar 
+number was made mandatory for release of 2nd installment pertaining to the period 
+01 .04.2019 to 31 .07.2019. Further, Aadhaar seeding of beneficiaries' data was made 
+mandatory for release of 3'o installment pertaining to the period 01.08.2019, and for 
+subsequent installments onwards. Recently, however, Government has relaxed the 
+mandatory requirement of Aadhaar seeding of beneficiaries' data upto 30.1 1.20'19. This 
+mandatory requirement of Aadhaar seeding of the beneficiaries' data would continue to 
+applicable for release of all installments w.e.f . O1 .12.2019. However, Assam, 
+Meghalaya and Jammu & Kashmir, where Aadhaar penetration has not been much, 
+have been given exemption from this mandatory requirement till 31.03.2020."
+
+ utter_urban_area_farmers_Whether_farmers_in_villages_situated_in_urban_areas_are_eligible_for_t:
+  - text: "There is no distinction between urban and rural cultivable land under the scheme. Both 
+are covered under the scheme, provided that land situated in urban areas is under 
+actual cultivation."
+
+ utter_micro_land_Whether_micro_land_holdings_are_admissible_for_availing_the_benefit_of:
+  - text: "Micro land holdings, which are not cultivable, are excluded from the benefit under the 
+scheme."
+
+ utter_prescribed_mechanism_What_is_the_prescribed_mechanism_for_validation_of_information_or_decl:
+  - text: "The State UT Governments are free to decide about the appropriate mechanism 
+authority for validation of information declaration furnrshed by the beneficiary."
+
+ utter_cutoff_date_What_is_the_cut-off_date_for_'minor'_children_becoming_'major'_under_t:
+  - text: "The cuLoff date for'minor' children becoming 'major' is 01 .02.2019"
+
+ utter_non_agricultural_purpose_._Whether_farmers_may_avail_the_benefit_of_the_Scheme_against_agricult:
+  - text: "No. Agricultural land being used for non-agricultural purposes will not be covered for 
+benefit under the scheme."
+
+ utter_installments_What_is_the_procedure_of_release_of_installments_to_the_beneficiaries:
+  - text: "a) An exclusive web-portal, namely, www. pmkisan.qov. in has been created for uploadrng of beneficiaries' data by the State UT Governments. b) The eligible farmers may apply with the village Patwaris, revenue officials or other designated officers agencies and submit their required details to them. c) Nodal Officers appointed by State UT Governments at Block lfduk I District level process the data and transfer them to State Nodal Officers (SNOs). d) State Nodal Officers finally authenticate the data and upload them in batches from time{o-time on the portal."
+
+ utter_installments_criteria_If_a_farmer_registered_under_the_Scheme_does_not_receive_any_installme:
+  - text: "Yes. The beneficiaries, whose names are uploaded on P[\ -Kisan portal by the 
+concerned State UT Governments in a particular 4-monthly period, shall be entitled to 
+receive the benefit for that period with effect from that 4-monthly period itself. lf they do 
+not receive the payment of installment pertaining to that 4-monthly period and 
+subsequent installments for any reason, except due to rejection for falling within the 
+exclusion criteria, they are entitled to receive the benefits of all the due installments as 
+and when the cause of delay is removed resolved. For example, if an eligible farmer's 
+name has been uploaded on the PIV-KISAN portal by the State UT Government 
+during the 4-monthly period of December. 2018 - l\ arch, 2019, he she is entitled to get 
+the installment pertaining to December, 2018 - lVarch, 20'19 period, and also all 
+subsequent installments. Further. if the eligible farmer's name is uploaded on the PIVKISAN portal during the 4-monthly period of April-July, 2019, he she is entitled to get 
+the installment pertarning to April-July, 2019 period and also all subsequent 
+installments. 
+lVlany beneficiaries, who have received installments pertaining to December, 2018 - 
+IMarch, 2019 period and April-July, 2019 period were not able to receive the installment 
+pertaining to August,-November, 2019 period. The reason for this delay was the 
+mandatory requirement of release of all installments pertaining to the 4-monthly period 
+August-November, 2019 and onwards only on the basis of Aadhaar seeded data of 
+beneficiaries. This work of Aadhaar seeding of data of beneficiaries had not been 
+completed by many State UT Governments. Therefore, the Central Government 
+relaxed this mandato re uirement till 30th November, 2019. The State UT Governments are required to complete the work of Aadhaar seeding of 100% 
+beneficiaries by 30th November, 2019, so that the beneficiaries are able to receive the 
+installment pertaining to the 4-monthly period of December, 2019 - March, 2020, and 
+all subsequent installments. Beneficiaries in the States of Assam, Meghalaya and J&K 
+(now UTs of J&K and Laddakh) have been exempted from all Aadhaar related 
+requirements till 31't IVIarch, 2020, by which time these States are also required to 
+complete the process of Aadhaar enrollment of all eligible farmers as well as Aadhaar 
+seeding of their data under this Scheme."
+
+ utter_mandatory_information_What_is_the_mandatory_information_required_to_be_submitted_on_PM-KISAN:
+  - text: "Farmers must provide the following information documents in order to be enrolled in the PM Kisan Scheme:
+
+Name, Age, Gender and Category (SC ST)
+(Aadhaar Number [except in case of farmers in the States of Assam, lr eghalaya and J&K (now UTs of J&K and Laddakh), where Aadhaar number has not been issued to most of the citizens, and therefore these States have been exempted from the requirement till 31 March 2020. ln these States UTs, Aadhaar number shall be collected for those beneficiaries where it is available and for others alternate prescribed documents can be collected for identity verification purposes by the States UT Governments, like Aadhaar Enrollment Number and or any other prescribed documents for purposes of the identification such as Driving Licence, Voters' lD Card, NREGA Job Card, or any other identification documents issued by Central State UT Governments or their authoritres, etc.)
+Bank Account Number and IFSC Code.
+Mobile number - though it is not mandatory but it is advised that when available it may be provided so that the information related to transfer of benefit can be communicated."
+
+ utter_incorrect_declaration_What_will_happen_if_the_beneficiary_gives_incorrect_declaration_for_pm:
+  - text: "In the event of a false declaration, the beneficiary is liable for the recovery of the transferred financial advantage as well as additional legal penalties."
+
+ utter_credit_card_scheme_What_is_kisan_credit_card_scheme:
+  - text: "To provide enough credit to the farmers for their farming or agriculture expenditures, the Kisan Credit Card (KCC) scheme was launched as the central government scheme or agriculture scheme in 1998. Under these agricultural or central government scheme, the Government of India provides help to farmers with farm credit at the subsidized rate of 4% per annum as government subsidies for agriculture. It is a part of the Atma Nirbhar Bharat scheme."
+
+ utter_use_Can_I_use_my_Kisan_Credit_Card_to_withdraw_cash_from_the_ATM:
+  - text: "Yes, you can use your Kisan Credit Card to withdraw cash from the ATM till upto the credit limit of the card."
+
+ utter_credit_limit_How_is_the_credit_limit_decided_for_Kisan_Credit_Card:
+  - text: "The credit limit is decided on the basis of various factors like the cropping pattern, crops cultivated, operational land holding, land holding pattern, services (repairs of tractors, etc.) and scale of finance."
+ 
+ utter_number_of_withdrawals_How_many_withdrawals_can_I_make_using_the_Kisan_Credit_Card:
+  - text: "You can make any number of withdrawals using the Kisan Credit Card but maximum upto your credit limit."
+
+ utter_POS_Can_I_use_the_Kisan_Credit_Card_at_merchant_Point_of_Sale_(POS)_termin:
+  - text: "Yes, generally banks allow you can use the Kisan Credit Card at merchant POS terminals for the purpose of purchase of seeds, fertilizers, pesticides and other agricultural inputs."
+
+ utter_insurance_premium_What_is_the_insurance_premium_for_personal_accident_insurance_scheme_a:
+  - text: "Normally, the premium towards personal accident insurance is Rs.15 - for 1 year, and Rs.45 - for 3 years tenure."
+
+ utter_validity_period_What_is_the_validity_period_for_Kisan_Credit_Card:
+  - text: "Usually in many cases, the Kisan Credit Card comes with a validity of 3 to 5 years. The credit limit can be reduced or enhanced or even the card can be cancelled by the bank, based on the performance of the card holder during an annual review."
+
+ utter_online_application_Can_I_apply_for_the_Kisan_Credit_Card_online_from_my_bank:
+  - text: "Yes, you can apply for Kisan Credit Card online using the website of the bank, if your bank provides online facility. If your bank provides online facility then you have to fill and submit your application. Then you will receive an acknowledgement from the bank on your registered email id. After processing of your application, you will be issued Kisan credit card along with a passbook."
+
+ utter_insurance_cover_What_type_of_insurance_cover_do_the_Kisan_Credit_Card_(KCC)_Holders_ge:
+  - text: "Kisan Credit Card (KCC) credit holders are covered under personal accident insurance up to Rs. 50,000 for accidental death and permanent disability due to accident and upto Rs. 25,000 for other type of risks."
+
+ utter_ratio_In_what_ratio_the_premium_of_Personal_Accident_Insurance_is_borne_by_t:
+  - text: "The Personal Accident insurance premium is borne by both the bank and the card holder in a 2:1 ratio."
+
+ utter_type_of_card_What_type_of_credit_is_provided_to_the_Kisan_Credit_Card_(KCC)_Holder:
+  - text: "Kisan Credit Card (KCC) offers two types of credit to the farmers: 
+
+Cash Credit 
+Term Credit (for allied activities such as pump sets, land development, plantation, drip irrigation)"
+
+ utter_NAIS_What_is_NAIS?:
+  - text: "NAIS is Crop Insurance scheme. Eligible crops in the notified area will be covered under National Agricultural Insurance Scheme (NAIS)."
+
+ utter_PAIS_What_is_PAIS?:
+  - text: "PAIS is an abbreviation for Personal Accident Insurance Scheme. KCC holders have been covered under Personal Accident Insurance Scheme (PAIS) against Personal death or permanent disability upto maximum amount of Rs 50,000 and Rs 25,000 respectively. The premium burden will be shared by the financing Bank and the borrower in the ratio of 2:1 (Bank: Borrower). Premium payable Rs 15 - for a one year policy while Rs 45 - for a 3 year policy."
+
+ utter_marginal_farmer_Who_is_a_Marginal_Farmer:
+  - text: "Farmers with landholding of up to 1 hectare are considered as Marginal Farmers under KCC scheme."
+
+ utter_minimum_credit_What_is_the_Minimum_credit_limit_under_Kisan_Credit_Card_(KCC):
+  - text: "Most of the banks have stipulated minimum credit limit of Rs. 3000."
+
+ utter_eligibility_Eligibility_for_kisan_credit_card:
+  - text: "All Farmers – Individuals Joint borrowers who are owner cultivators[6] 
+Tenant Farmers, Oral Lessees & Share Croppers[7] 
+Self Help Groups (SHGs) or Joint Liability Groups of Farmers including tenant farmers, share croppers etc."
+
+ utter_application_How_do_I_apply_for_a_Kisan_Credit_Card:
+  - text: "You can apply for a Kisan Credit Card by contacting your nearest bank or cooperative society. You will need to provide proof of identity, proof of address, and proof of land ownership or tenancy."
+
+ utter_benifits_What_are_the_benefits_of_the_Kisan_Credit_Card_Scheme:
+  - text: "The Kisan Credit Card Scheme is a government initiative in India that provides farmers with affordable credit for their agricultural needs."
+
+ utter_credits_gained_How_much_credit_can_I_get_through_the_Kisan_Credit_Card_Scheme:
+  - text: "The amount of credit you can get through the Kisan Credit Card Scheme depends on your income, creditworthiness, and the purpose of the loan. However, the maximum limit for Kisan Credit Card is Rs. 3 Lakhs."
+
+ utter_interest_rate_What_is_the_interest_rate_on_Kisan_Credit_Card_loans:
+  - text: "The interest rate on Kisan Credit Card loans varies from bank to bank, but it is generally lower than the interest rate on other types of loans."
+
+ utter_non_agricultural_purpose_Can_I_use_the_Kisan_Credit_Card_for_non-agricultural_purposes:
+  - text: "No, the Kisan Credit Card can only be used for agricultural and related activities."
+
+ utter_processing_fee_Is_there_any_processing_fee_for_the_Kisan_Credit_Card_Scheme:
+  - text: "The processing fee for the Kisan Credit Card Scheme varies from bank to bank, but it is generally minimal or waived off."
+
+ utter_repayment_period_What_is_the_repayment_period_for_Kisan_Credit_Card_loans:
+  - text: "The repayment period for Kisan Credit Card loans varies from bank to bank, but it is generally one year for short-term loans and up to three years for long-term loans."
+
+ utter_failed_to_repay_What_happens_if_I_fail_to_repay_my_Kisan_Credit_Card_loan:
+  - text: "If you fail to repay your Kisan Credit Card loan, you may be charged a penalty fee, and your credit score may be affected. The bank may also take legal action to recover the loan amount."
+
+ utter_PMKMNDY_What_is_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_(PM-KMY):
+  - text: "It is an old age pension scheme for all land holding Small and Marginal Farmers 
+(SMFs) in the country. It is a voluntary and contributory pension scheme for the entry 
+age group of 18 to 40 years with a provision of payment of Rs. 3000 monthly pension 
+on attaining the age of 60 years, subject to certain exclusion criteria. 
+2"
+
+ utter_benifits_PMKMNDY_What_are_the_benefits_of_the_scheme:
+  - text: "Under the scheme, the subscriber would receive the following benefits:
+? Minimum Assured Pension3
+: Each subscriber under the scheme shall receive a
+minimum assured pension of Rs. 3000 per month after attaining the age of 60 years.
+? Family Pension: During the receipt of pension, if the subscriber dies, the spouse of
+the beneficiary shall be entitled to receive 50 per cent of the pension received by the beneficiary as family pension, provided he she is not already a beneficiary of the 
+scheme. Family pension is applicable only to spouse. 
+? If a beneficiary has given regular contribution and died of any cause (before age of 60 
+years), his her spouse will be entitled to join and continue the scheme subsequently by 
+payment of regular contribution or exit the scheme as per provisions of exit and 
+withdrawal."
+
+ utter_eligibiliy_Who_is_eligible_to_get_the_benefits_of_the_scheme:
+  - text: "All Small and Marginal Farmers having cultivable land holding up to Two hectares4 
+falling in the age group of 18 to 40 years, whose names appear in the land records of 
+States UTs as on 01.08.2019 are eligible to get benefit under the Scheme."
+
+ utter_incorrect_data_What_will_happen_if_the_beneficiary_gives_incorrect_declaration_to_be_:
+  - text: "In case of incorrect declaration5 
+, the beneficiary shall be liable to get back his 
+contributions without any interest thereon. The Central Government’s matching 
+contribution will be stopped."
+
+ utter_information_for_PMKMNDY_What_kind_of_information_needs_to_be_provided_by_the_beneficiary_at_th:
+  - text: "The beneficiary will provide following information at the time of registration6 
+? Farmer’s Spouse’s name and date of birth 
+? Bank account number 
+? IFSC MICR Code 
+? Mobile Number 
+? Aadhaar Number 
+? Other customer information is available in the passbook which is required for 
+mandatory registration."
+
+ utter_Pension_fund_manager_Who_will_act_as_Pension_Fund_Manager_for_the_Scheme:
+  - text: "Life Insurance Corporation of India (LIC)7 shall be the Pension Fund Manager and responsible for Pension Pay-Out"
+
+ utter_contribution_Can_contribution_to_the_scheme_be_made_from_the_benefits_received_from:
+  - text: "Yes. The SMFs shall have the option to allow payment of his her voluntary 
+contribution to the Scheme from the financial benefits received by them from the PMKISAN Scheme8 
+, directly. 
+The eligible SMFs who are desirous of using their PM-Kisan benefit for contributing 
+for Pradhan Mantri Kisan Maan-dhan Yojana, will have to sign and submit an 
+enrollment-cum-auto debit mandate form for giving their consent for auto-debiting 
+their bank accounts, in which their PM-Kisan benefits are credited, so that their 
+contributions are automatically paid."
+
+ utter_Pension_fund_What_would_constitute_a_Pension_Fund:
+  - text: "The Central Government through the Department of Agriculture9 
+, Cooperation and 
+Farmers Welfare shall also contribute an equal amount as contributed by the eligible 
+subscriber, to the Pension Fund account of such co-contributions shall be maintained 
+separately by the LIC and these co-contributions along with fund earnings from time 
+to time shall be utilized for pension payment on the date of vesting. Co-contributions 
+would not be paid to subscribers in case of pre-mature exits. In such a case, the cocontributions along with fund earnings will be transferred back to the Pension Fund."
+
+ utter_SMF_Are_StateorUT_Governments_permitted_to_share_the_burden_of_individual_:
+  - text: "Yes. The State UT Governments will have the option of sharing the burden of 
+individual SMF10 beneficiary’s contribution."
+
+ utter_due_date_What_will_be_the_due_date_for_monthly_contributions:
+  - text: "The monthly contributions11 will fall due on the same day every month as enrollment 
+date. The beneficiaries may also choose an option to pay their contributions on 
+quarterly, four-monthly or half-yearly basis. Such contributions will fall due on the 
+same day of such period as the date of enrollment."
+
+ utter_CSC_When_would_CSC_issue_a_Pension_Card_to_the_subscriber:
+  - text: "Upon completion of enrollment process at Common Service Centres (CSC), an 
+enrollment-cum-auto-debit-mandate12 a form will be generated for taking consent of 
+those farmers who are also beneficiaries of PM-Kisan Scheme for auto-debiting their 
+PM-Kisan benefits from their bank accounts and signed by the subscriber. In respect 
+of those farmers who are not beneficiaries of PM-Kisan Scheme, the enrollment-cumauto-debit-mandate form will be generated for taking their consent for auto-debiting 
+their active bank accounts and signed by the subscriber. 
+The CSC Centres would scan the signed enrollment-cum-auto-debit mandate form 
+and upload the same on the CSC system. Subsequent to this a pension card would be 
+generated and given to the subscriber as proof of the pension account having been 
+opened."
+
+ utter_Spouses_Will_the_applicant_farmers_or_their_spouses_be_charged_any_fee_for_enr:
+  - text: "The enrolment at CSC Centres13 is free of cost and the applicant farmers their 
+spouses shall not have to pay any charge for the purpose."
+
+ utter_apply_PMKMNDY_How_do_I_apply_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana:
+  - text: "You can apply for the Pradhan Mantri Kisan Maan-Dhan Yojana through your nearest Common Service Center (CSC) or by contacting the designated authorities in your area."
+
+ utter_contri_amount_What_is_the_contribution_amount_for_the_Pradhan_Mantri_Kisan_Maan-Dhan:
+  - text: "The contribution amount for the Pradhan Mantri Kisan Maan-Dhan Yojana ranges from Rs. 55 to Rs. 200 per month, depending on the age of the farmer."
+
+ utter_benifits_Can_I_avail_of_the_benefits_of_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yoja:
+  - text: "Yes, you can avail of the benefits of the Pradhan Mantri Kisan Maan-Dhan Yojana even if you have another pension scheme, as long as you meet the eligibility criteria."
+
+ utter_refundable_Is_the_enrollment_fee_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_re:
+  - text: "No, the enrollment fee for the Pradhan Mantri Kisan Maan-Dhan Yojana is non-refundable."
+
+ utter_min_max_What_is_the_minimum_and_maximum_age_limit_to_enroll_in_the_Pradhan_Man:
+  - text: "The minimum age limit to enroll in the Pradhan Mantri Kisan Maan-Dhan Yojana is 18 years, and the maximum age limit is 40 years."
+
+ utter_availibility_Is_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_available_in_all_states_i:
+  - text: "Yes, the Pradhan Mantri Kisan Maan-Dhan Yojana is available in all states in India, and farmers can apply for the scheme through their nearest Common Service Center (CSC) or designated authorities."
+
+ utter_nomination_Can_I_nominate_someone_to_receive_the_benefits_of_the_Pradhan_Mantri_K:
+  - text: "Yes, you can nominate someone to receive the benefits of the Pradhan Mantri Kisan Maan-Dhan Yojana in case of your death."
+
+ utter_change_of_nominie_Can_I_change_my_nominee_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana:
+  - text: "Yes, you can change your nominee for the Pradhan Mantri Kisan Maan-Dhan Yojana at any time by filling out the relevant form and submitting it to the designated authorities."
+
+ utter_penalty_Is_there_any_penalty_for_late_payment_of_the_contribution_amount_for_t:
+  - text: "Yes, there is a penalty of 1% per month on the outstanding contribution amount for the Pradhan Mantri Kisan Maan-Dhan Yojana in case of late payment."
+
+ utter_exit_criteria_Can_I_exit_from_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_before_the_a:
+  - text: "Yes, you can exit from the Pradhan Mantri Kisan Maan-Dhan Yojana before the age of 60, but you will only receive a refund of the contribution amount after deducting the charges incurred by the scheme."
+
+ utter_cultivable_land_Is_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_available_for_farmers_who:
+  - text: "No, the Pradhan Mantri Kisan Maan-Dhan Yojana is only available for farmers who own cultivable land up to 2 hectares."
+
+ utter_cross_benifits_Can_I_avail_of_the_benefits_of_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yoja:
+  - text: "Yes, you can avail of the benefits of the Pradhan Mantri Kisan Maan-Dhan Yojana even if you are already receiving benefits under other government schemes, as long as you meet the eligibility criteria."
+
+ utter_pension_amount_How_will_the_pension_amount_be_disbursed_under_the_Pradhan_Mantri_Kisa:
+  - text: "he pension amount under the Pradhan Mantri Kisan Maan-Dhan Yojana will be directly credited to the bank account of the beneficiary."
+
+ utter_age_relaxation_Is_there_any_age_relaxation_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yoj:
+  - text: "No, there is no age relaxation for the Pradhan Mantri Kisan Maan-Dhan Yojana, and farmers between the ages of 18 and 40 are only eligible to enroll."
+
+ utter_provision_for_PMKMNDY_Is_there_any_provision_for_the_Pradhan_Mantri_Kisan_Maan-Dhan_Yojana_f:
+  - text: "Yes, disabled farmers are eligible to enroll in the Pradhan Mantri Kisan Maan-Dhan Yojana, and they will receive the same benefits as other beneficiaries."
+
+ utter_change_in_amount_Can_I_change_my_contribution_amount_for_the_Pradhan_Mantri_Kisan_Maan-:
+  - text: "Yes, you can change your contribution amount for the Pradhan Mantri Kisan Maan-Dhan Yojana once a year during the month of April."
+
+ utter_PMKSY_What_is_Pradhan_Mantri_Krishi_Sinchayee_Yojana_(PMKSY)_approved_by_NDA:
+  - text: "Cabinet Committee on Economic Affairs chaired by Hon?ble Prime Minister Sh. Narendra Modi has given approval of Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) to overcome the dependency of agriculture farming on rainfall monsoons. PMKSY aims at amalgamation of ongoing schemes viz. Accelerated Irrigation Benefit Programme (AIBP) of Ministry of Water Resources, River Development & Ganga Rejuvenation (MoWR, RD&GR), Integrated Watershed Management Programme (IWMP) of Department of Land Resources (DoLR), Ministry of Rural Development (MoRD) and On Farm Water Management (OFWM) component of National Mission on Sustainable Agriculture (NMSA) of Department of Agriculture and Cooperation (DAC). Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) is approved for implementation across the country with an outlay of Rs.50,000 crore in five years. The central assistance will be based on utilisation by the State Government in different years in coming five year. If required, total allocation for this scheme will be enhanced to meet the requirement of the State Governments, so that objective of providing Har Khet Ko Pani and Per Drop More Crop could be achieved."
+
+ utter_PMKSY_What_are_the_major_objectives_of_PMKSY:
+  - text: "Despite several efforts in past decades, large agriculture area is still dependent on the monsoons and on the event of failure of monsoons, farmers had been facing hardship for survival of their crops. In view to resolve these problems and also to provide Har Khet ko Pani “Pradhan Mantri Krishi Sinchayee Yojana” (PMKSY) has been approved for implementation across the country. The major objective of PMKSY is to achieve convergence of investments in irrigation at the field level, expand cultivable area under assured irrigation, improve on-farm water use efficiency to reduce wastage of water, enhance the adoption of precision-irrigation and other water saving technologies (Per Drop More Crop), enhance recharge of aquifers and introduce sustainable water conservation practices by exploring the feasibility of reusing treated municipal waste water for peri-urban agriculture and attract greater private investment in precision irrigation system. The scheme also aims at bringing the Ministries Departments Agencies Research & Financial Institutions concerned, engaged in creation use recycling potential recycling of water brought under a common platform so that a comprehensive and holistic view of entire “water cycle” is taken into account & proper water budgeting is done for all sectors viz. household, agriculture & industries."
+
+ utter_programmes_What_are_the_programmes_for_achieving_the_objectives:
+  - text: "Under PMKSY, Accelerated Irrigation Benefit Programme (AIBP) of Ministry of Water Resources, River Development & Ganga Rejuvenation (MoWR,RD&GR), Integrated Watershed Management Programme (IWMP) of Department of Land Resources (DoLR), Ministry of Rural Development (MoRD) and On Farm Water Management (OFWM) component of National Mission on Sustainable Agriculture (NMSA) of Department of Agriculture Cooperation & Farmers Welfare (DAC&FW) for achieving the objectives, various ongoing programmes of three ministries are amalgamated. MoRD is to mainly undertake rain water conservation, farm pond, water harvesting structure, small check dams and contour bunding etc. under Integrated Watershed Management Programme (IWMP). MoWR, RD&GR, is to undertake various measures for completion of ongoing projects of Accelerated Irrigation Benefit Programme (AIBP), besides construction of diversion canals, field channels, water diversion lift irrigation, including development of water distribution systems. Ministry of Agriculture & Farmers Welfare, Department of Agriculture Cooperation & Farmers Welfare is to undertake activities like rainwater conservation, runoff control structures, water harvesting structures etc. including measures to augment ground water. Besides, DAC&FW is promoting, crop diversification and ensures crop water budgeting for per drop more crop. Crop development, farm forestry, pasture development and other livelihood support interventions will be undertaken for increasing farmers? income. For improving water use efficiency and to assure irrigation to agricultural farm (Her Khet Ko Pani) larger area under micro irrigation systems (drip, sprinkler and raingun etc.) is to be promoted."
+
+ utter_role_of_MP_What_will_be_role_of_Member_of_Parliament_(MP)orMember_of_Legislative_:
+  - text: "While formulating District Irrigation Plans (DIPs), suggestions of Hon?ble Member of Parliament, Member of Legislative Assembly are to be duly considered and included in DIPs. Highest priority will be given on the valuable suggestions recommendations of Member of Parliament of that particular district."
+
+ utter_micro_irrigation_What_is_the_pattern_of_assistance_under_micro_irrigation_scheme_of_PMK:
+  - text: "The pattern of assistance payable under the micro irrigation scheme will be 55% for small and marginal farmers and 45% for other farmers which will be met by both Central Government and State Government in the ratio of 60:40 for all states except the North Eastern and Himalayan states. In the case of these states, ratio of sharing is 90:10. For the Union Territories, funding pattern is 100% grant by the Central Government."
+
+ utter_subsidy_release_What_is_the_method_of_subsidy_release_to_the_beneficiary:
+  - text: "Farmers can apply for the scheme either in MIS system (online) or in offline mode. Subsidy is released to the beneficiary electronically through the mechanism of Direct Benefit Transfer (DBT). The subsidy payable to the beneficiary will be limited to an overall ceiling of 5 hectare per beneficiary."
+
+ utter_funds_Funds_are_being_provided_to_three_ministries_and_what_will_be_the_syst:
+  - text: "PMKSY is to be implemented on projectised mode of implementation. Programme architecture is to adopt a „decentralized State level planning and projectised execution? structure that empowers States to draw up their own irrigation development plans based on District Irrigation Plan (DIP). A committee under the chairmanship of District Magistrate with members from Departments concerned, including district Forest officer, Lead Bank Officer etc. at district level is empowered to finalise the DIP. Similarly, State Irrigation Plan (SIP) will be amalgamation of DIPs for operative convergence platform for all water sector activities including drinking water & sanitation, application of science & technology etc. through comprehensive SIP State Level Sanctioning Committee (SLSC) chaired by the 
+Chief Secretary of the respective States are authorized to 
+sanction projects, oversee its implementation and monitoring. 
+National Executive Committee (NEC) is constituted under the 
+Chairmanship of Vice Chairman, NITI Aayog to oversee programme 
+implementation, allocation of resources, inter-ministerial coordination, 
+monitoring & performance assessment, addressing administrative issues. 
+At National level, programme is to be supervised and monitored by 
+an Inter-Ministerial National Steering Committee (NSC) under the 
+Chairmanship of Hon?ble Prime Minister with Union Ministers concerned 
+Ministries as a member. 
+Guidelines of the PMKSY for effective implementation and monitoring 
+etc. is formulated with active consultation of concerned 
+Department Ministries will be issued over the approval of Hon?ble Union 
+Minister of Agriculture."
+
+ utter_GST_rate_What_is_the_GST_rate_applicable_for_Micro_Irrigation_Systems?:
+  - text: "GST rate on Micro Irrigation system is 12% vide notification no. 6 2018-Central Tax (Rate) dated 25th January, 2018 of Ministry of Finance."
+
+ utter_facilities_What_are_the_facilities_provided_under_PMKSY-Per_Drop_More_Crop:
+  - text: "The PMKSY-Per Drop More Crop mainly focuses on water use efficiency at farm level through precision micro irrigation. The following facilities can be provided to farmers under the programme subject to AAP approved in SSC and the activities included under DIP. (A) Micro Irrigation: i) Drip Irrigation: This technology involves irrigating plants at the root zone through emitters fitted on a network of pipes (mains, sub-mains and laterals). Assistance for Drip Irrigation depends on plant spacing and the area of the crop covered. ii) Sprinkler Irrigation: Water is sprinkled under pressure into the air and plant foliage through a set of nozzles attached to network of pipes in the form of rainfall. (B) Other Interventions: micro level water storage or water conservation management, water lifting devices, water carrying pipes, secondary storage etc."
+
+ utter_benifits_PMKSY_How_to_get_benefit_of_scheme:
+  - text: "The farmers may contact to nearest Office of Agricultural Department or District Agriculture Officer District Horticulture Officer for more information and obtaining benefits under PMKSY."
+
+ utter_PMKSY_What_is_the_objective_of_Pradhan_Mantri_Kisan_Sampada_Yojana:
+  - text: "The objective of Pradhan Mantri Kisan Sampada Yojana is to create modern infrastructure for food processing in the country, thereby boosting the growth of the food processing industry and providing better income opportunities to farmers."
+
+ utter_components_What_are_the_components_of_Pradhan_Mantri_Kisan_Sampada_Yojana:
+  - text: "The components of Pradhan Mantri Kisan Sampada Yojana are Mega Food Parks, Integrated Cold Chain and Value Addition Infrastructure, Creation of Backward and Forward Linkages, Infrastructure for Agro-Processing Clusters, Creation and Expansion of Food Processing and Preservation Capacities, and Human Resource and Institution."
+
+ utter_eligibility_Who_is_eligible_to_apply_for_Pradhan_Mantri_Kisan_Sampada_Yojana:
+  - text: "The central and state government agencies, farmer producer organizations, cooperatives, and private sector entities engaged in the food processing sector are eligible to apply for Pradhan Mantri Kisan Sampada Yojana."
+
+ utter_application_How_can_I_apply_for_Pradhan_Mantri_Kisan_Sampada_Yojana:
+  - text: "he interested applicants can apply for Pradhan Mantri Kisan Sampada Yojana online by visiting the official website of the Ministry of Food Processing Industries or by submitting the application form to the designated authority."
+
+ utter_assistance_provided_What_is_the_financial_assistance_provided_under_Pradhan_Mantri_Kisan_S:
+  - text: "The financial assistance provided under Pradhan Mantri Kisan Sampada Yojana varies for different components of the scheme. The government provides up to 50% of the total project cost as a grant-in-aid for certain components, while for others, it provides a loan with an interest subsidy."
+
+ utter_duration_What_is_the_duration_of_the_implementation_of_the_project_under_Pradha:
+  - text: "The duration of the implementation of the project under Pradhan Mantri Kisan Sampada Yojana varies for different components of the scheme. However, it generally ranges from 18 months to 36 months."
+
+ utter_progress_How_is_the_progress_of_the_project_monitored_under_Pradhan_Mantri_Kisa:
+  - text: "The progress of the project under Pradhan Mantri Kisan Sampada Yojana is monitored by the Project Management Agency (PMA) appointed for each project. The PMA monitors the physical and financial progress of the project and submits regular reports to the Ministry of Food Processing Industries."
+
+ utter_changing_location_Can_the_beneficiary_change_the_location_of_the_project_under_Pradhan_M:
+  - text: "No, the beneficiary cannot change the location of the project under Pradhan Mantri Kisan Sampada Yojana once the project is approved by the government."
+
+ utter_role_of_MOFPI_What_is_the_role_of_the_Ministry_of_Food_Processing_Industries_in_Prad:
+  - text: "The Ministry of Food Processing Industries is responsible for implementing and monitoring the Pradhan Mantri Kisan Sampada Yojana. It provides financial assistance, technical support, and project management services to the beneficiaries of the scheme."
+
+ utter_UPIS_What_is_Unified_Package_Insurance_Scheme?:
+  - text: "The Unified Package Insurance Scheme is a government-backed insurance program that provides comprehensive insurance coverage to vulnerable families in India who are living below the poverty line."
+
+ utter_Coverage_What_is_covered_under_the_Unified_Package_Insurance_Scheme?:
+  - text: "The Unified Package Insurance Scheme provides coverage for hospitalization expenses, personal accident insurance, and life insurance for the head of the family."
+
+ utter_eligibility_Who_is_eligible_for_the_Unified_Package_Insurance_Scheme?:
+  - text: "The Unified Package Insurance Scheme is designed for families living below the poverty line, including those living in rural and remote areas."
+
+ utter_how_to_enroll_How_do_families_enroll_in_the_Unified_Package_Insurance_Scheme?:
+  - text: "Families can enroll in the Unified Package Insurance Scheme through their state government or through their local insurance agent."
+
+ utter_cost_for_enrollment_Is_there_a_cost_for_enrollment_in_the_Unified_Package_Insurance_Scheme:
+  - text: "The enrollment fee for the Unified Package Insurance Scheme is Rs. 330 per family per annum."
+
+ utter_max_coverage_What_is_the_maximum_coverage_provided_under_the_Unified_Package_Insura:
+  - text: "The maximum coverage provided under the Unified Package Insurance Scheme is Rs. 2 lakh per family per annum."
+
+ utter_claim_How_can_families_make_a_claim_under_the_Unified_Package_Insurance_Sche:
+  - text: "Families can make a claim under the Unified Package Insurance Scheme by submitting a claim form and supporting documents to their local insurance agent or government office."
+
+ utter_medical_conditions_Are_pre-existing_medical_conditions_covered_under_the_Unified_Package_:
+  - text: "No, pre-existing medical conditions are not covered under the Unified Package Insurance Scheme."
+
+ utter_Krishi_Udan_What_is_Krishi_UDAN:
+  - text: "Krishi UDAN is a government scheme launched to enable farmers to transport their agricultural produce quickly and efficiently across the country through air routes."
+
+ utter_eligibility_Who_is_eligible_for_Krishi_UDAN:
+  - text: "Farmers, Farmer Producer Organizations (FPOs), and agricultural cooperatives are eligible to participate in Krishi UDAN."
+
+ utter_working_How_does_Krishi_UDAN_work:
+  - text: "Under the scheme, agricultural produce is transported via air routes from small towns and cities to bigger markets. The government provides subsidies to airlines for transporting agricultural products."
+
+ utter_benifits_What_is_the_benefit_of_Krishi_UDAN_to_farmers:
+  - text: "Krishi UDAN enables farmers to transport their produce quickly and efficiently, reducing spoilage and ensuring that their products reach markets on time. This increases the value of their produce and improves their income."
+
+ utter_farmers_participation_How_can_farmers_participate_in_Krishi_UDAN:
+  - text: "Farmers can participate in Krishi UDAN by partnering with FPOs or agricultural cooperatives that are registered under the scheme. They can then supply their produce to these organizations for transportation via air routes."
+
+ utter_airlines_Which_airlines_participate_in_Krishi_UDAN:
+  - text: "Several airlines, including IndiGo, SpiceJet, and Air India, participate in Krishi UDAN."
+
+ utter_types_What_are_the_types_of_agricultural_produce_that_can_be_transported_und:
+  - text: "Krishi UDAN covers the transportation of all types of agricultural produce, including fruits, vegetables, flowers, fish, and meat."
+
+ utter_subsidy_provided_What_is_the_subsidy_provided_under_Krishi_UDAN:
+  - text: "The government provides a subsidy of 50% to airlines for transporting agricultural produce under Krishi UDAN."
+
+ utter_impact_How_has_Krishi_UDAN_impacted_the_agriculture_sector_in_India:
+  - text: "Krishi UDAN has helped to increase the income of farmers by enabling them to transport their produce quickly and efficiently. It has also facilitated the growth of the agriculture sector in India by improving the value chain and reducing wastage."
+
+
+
+
+ 
+
+
+
+  
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
